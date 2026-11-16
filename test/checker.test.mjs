@@ -147,8 +147,9 @@ test('disabled instances make no requests; POST opt-outs cannot enter the open l
 
 test('outages retain last-open timestamps and increment failure counts without stale success', async () => {
   const previous = { last_open_at: '2026-11-15T10:00:00.000Z', consecutive_failures: 2 };
-  const result = await checkInstance(instance, { previous, request: async () => reply(null, '', 'dns_error') });
-  assert.equal(result.availability, 'offline');
+  const result = await checkInstance(instance, { previous, sleep: async () => {}, request: async () => reply(null, '', 'dns_error') });
+  assert.equal(result.availability, 'unreachable');
+  assert.equal(result.offline_since, null);
   assert.equal(result.api_access, 'unverified');
   assert.equal(result.consecutive_failures, 3);
   assert.equal(result.last_open_at, previous.last_open_at);
@@ -167,7 +168,7 @@ test('checks run with bounded cross-instance concurrency and preserve catalog or
   let active = 0;
   let maximum = 0;
   const entries = Array.from({ length: 7 }, (_, index) => ({ ...instance, id: `item-${index}` }));
-  const result = await checkAll(entries, { concurrency: 2, request: async () => {
+  const result = await checkAll(entries, { concurrency: 2, sleep: async () => {}, request: async () => {
     active++;
     maximum = Math.max(maximum, active);
     await new Promise(resolve => setTimeout(resolve, 1));
@@ -377,4 +378,32 @@ test('immediate IPv4 and IPv6 socket failures cannot crash the checker process',
     cwd: fileURLToPath(new URL('../', import.meta.url)), timeout: 5000,
   });
   assert.match(stdout, /All four connection failures were recorded/);
+});
+
+
+test('a recheck can use another public address while preserving DNS filtering and IPv4 preference', async () => {
+  const addresses = [
+    { address: '2606:4700:4700::1111', family: 6 },
+    { address: '93.184.216.34', family: 4 }, { address: '1.1.1.1', family: 4 },
+  ];
+  for (const [avoidAddress, expected] of [
+    [undefined, '93.184.216.34'], ['93.184.216.34', '1.1.1.1'],
+  ]) {
+    const observed = [];
+    const result = await requestEndpoint('https://example.org/', {
+      avoidAddress, lookup: async () => addresses, request: fakeHttps({}, observed),
+    });
+    assert.equal(result.resolved_ip, expected);
+    assert.equal(observed[0].options.family, 4);
+  }
+  const sole = await requestEndpoint('https://example.org/', {
+    avoidAddress: '93.184.216.34', lookup: publicLookup, request: fakeHttps(),
+  });
+  assert.equal(sole.resolved_ip, '93.184.216.34');
+  const mixed = await requestEndpoint('https://example.org/', {
+    avoidAddress: '93.184.216.34',
+    lookup: async () => [...addresses, { address: '127.0.0.1', family: 4 }],
+    request: () => { throw new Error('Must not bypass address filtering'); },
+  });
+  assert.equal(mixed.error, 'non_public_address');
 });

@@ -53,11 +53,23 @@ Each enabled server receives four sequential GET requests: `/health`, `/language
 | `blocked`                 | Access was forbidden or the response was not translation JSON     |
 | `unverified`              | Skipped, unreachable, malformed, or another inconclusive response |
 
-`availability` is `online` when language discovery and a recognizable translation response succeed; an opted-out translation probe can also be `online` with valid languages and health. A responding server with incomplete API checks is `degraded`. A server without any HTTP response is `offline`. An opted-out entry is `disabled`. These describe the checker's network vantage point. WAF rules, geographic restrictions, and rate limits can produce different results elsewhere.
+`availability` describes what this checker could verify:
+
+| Value | Meaning |
+| --- | --- |
+| `online` | Valid languages and a recognizable translation response; an opted-out POST can also qualify with valid languages and health |
+| `degraded` | An HTTP response arrived, but the API checks were incomplete |
+| `unreachable` | DNS, TLS, routing, timeout, address filtering, or another inconclusive connection failure |
+| `offline` | All four initial GETs and the delayed language GET returned `ECONNREFUSED` for validated public addresses |
+| `disabled` | Checks were explicitly disabled for this entry |
+
+The report includes a **Check detail** column. JSON endpoint results retain the Node error code and whether failure occurred during URL validation, DNS lookup, or the request. For example, an IPv6-only host with `ENETUNREACH` is unreachable from this checker and does not start an offline countdown. DNS lookup errors do not prove a domain is absent; [Node documents other causes of `ENOTFOUND`](https://nodejs.org/docs/latest-v24.x/api/dns.html#dnslookuphostname-options-callback).
+
+These are observations from one network. A working site can remain unreachable from a GitHub runner because of IPv6 support, WAF rules, regional restrictions, or temporary routing failures. Even a refused connection is evidence for human review, not proof of worldwide downtime. Consumers of `data/status.json` should handle the `unreachable` value; `data/open.json` still includes only successful current anonymous translation probes.
 
 Public settings' `keyRequired` is stored separately from the actual anonymous translation result. It does not override a successful or rejected API request. An HTML login or challenge page is never counted as a working translation API. Endpoint failures include DNS, TLS, timeout, oversized body, and HTTP status details. The homepage version is informational: different LibreTranslate versions remain eligible.
 
-The default is three instances at once and ten seconds per request. Requests to one instance are sequential and never retried automatically. HTTPS checks keep TLS verification enabled. HTTP-only entries require an explicit `allow_insecure_http: true` opt-in; their traffic is unencrypted. Bodies are limited to 1 MiB. Redirects are recorded without following them; update the catalog's base URL if a server moves. DNS results must be public addresses and are pinned for the request. Local, private, reserved, and link-local destinations are rejected.
+The default is three instances at once and ten seconds per request. Requests to one instance are sequential. If all four initial GETs return no HTTP response, the checker waits two seconds and rechecks `/languages` once with a fresh DNS lookup, another validated public IP when available, and a deadline of 1.5 times the normal timeout, capped at 30 seconds. Known routing, TLS, and address-filter failures skip that recheck. A recovered language list can enable the single translation probe. POST requests and HTTP error responses, including rate limits, are never retried. HTTPS checks keep TLS verification enabled. HTTP-only entries require an explicit `allow_insecure_http: true` opt-in; their traffic is unencrypted. Bodies are limited to 1 MiB. Redirects are recorded without following them; update the catalog's base URL if a server moves. DNS results must be public addresses and are pinned for the request. Local, private, reserved, and link-local destinations are rejected.
 
 ## Run locally
 
@@ -78,7 +90,7 @@ node scripts/check.mjs --no-translation
 node scripts/check.mjs --catalog data/instances.json --out-dir /tmp/lt-data --report /tmp/lt-status.md
 ```
 
-`--validate` and the tests make no external requests. Live checks exit successfully even if instances are down, so outages are saved as data. Invalid catalog data, checker bugs, or output failures fail the run and preserve the error in Actions. A whole-network outage can make every candidate appear offline; inspect the per-endpoint errors before drawing conclusions.
+`--validate` and the tests make no external requests. Live checks exit successfully even if instances are down, so outages are saved as data. Invalid catalog data, checker bugs, or output failures fail the run and preserve the error in Actions. A whole-network outage can make every candidate appear unreachable; inspect the per-endpoint errors before drawing conclusions.
 
 ## Daily GitHub check
 
@@ -100,11 +112,11 @@ Pull requests run offline tests and catalog validation with a read-only token. T
 
 After publishing the daily results, the workflow prepares one pull request on `automation/remove-offline-instances`. It proposes removing entries from `data/instances.json` only when:
 
-- The latest check is `offline` and the recorded outage spans **more than seven full days**.
-- Eight consecutive UTC dates have offline observations for the same instance URL and outage start time.
+- The latest check is `offline` under the connection-refusal policy, and the recorded outage spans **more than seven full days**.
+- Eight consecutive UTC dates contain the same URL and outage start time, with saved refusal evidence for all four GET endpoints and the delayed GET recheck on every date.
 - The current results are fresh, and at least one other enabled instance returned an HTTP response.
 
-`offline_since` records the first failed check in the current streak. Any HTTP response, including an API-key requirement, rate limit, or degraded service, breaks the streak. A skipped UTC date, a gap over 36 hours, a changed URL, or a disabled instance resets or excludes it. Repeated checks on one day do not count as extra days. Tracking starts with the first check using this version; older summaries are not backfilled.
+`offline_since` records the first qualifying refusal check in the current streak. Timeouts, DNS, TLS and routing failures cannot start or extend that streak. Any HTTP response, including an API-key requirement, rate limit, or degraded service, also breaks it. A skipped UTC date, a gap over 36 hours, a changed URL, or a disabled instance resets or excludes it. Repeated checks on one day do not count as extra days. Older offline summaries without the new refusal evidence are ineligible and cannot carry their countdown forward. The evidence is stored in `down_check` in both current status and daily history.
 
 The PR lists outage timestamps and links to daily evidence. Subsequent runs update the same PR, drop recovered sites, and close it if no candidates remain. A maintainer reviews and merges removals. Observations from this checker cannot prove continuous downtime or rule out a regional network problem.
 

@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 import { offlineSince, planOfflineRemovals, renderRemovalPullRequest } from '../lib/offline.mjs';
 import { checkInstance } from '../lib/checker.mjs';
 import { writeOutputs } from '../lib/output.mjs';
+import { DOWN_POLICY, eligibleOffline } from '../lib/reachability.mjs';
 
 const DAY = 86_400_000;
 const now = new Date('2026-11-16T12:00:00.000Z');
@@ -20,11 +21,19 @@ const dead = {
 const alive = { ...dead, id: 'alive', name: 'Alive server', url: 'https://alive.example.org' };
 const catalog = [dead, alive];
 
+function evidence() {
+  const failure = { http_status: null, error: 'connection_error', error_code: 'ECONNREFUSED',
+    error_stage: 'request', resolved_ip: '93.184.216.34' };
+  return { policy: DOWN_POLICY, primary: Object.fromEntries(
+    ['health', 'languages', 'settings', 'homepage'].map(name => [name, { ...failure }])),
+    confirmation: { ...failure } };
+}
+
 function fixture(at = now) {
   const checked_at = at.toISOString();
   const item = {
     ...dead, checked_at, availability: 'offline', api_access: 'unverified',
-    offline_since: iso(at.getTime() - 8 * DAY),
+    offline_since: iso(at.getTime() - 8 * DAY), down_check: evidence(),
     endpoints: { health: { http_status: null, error: 'timeout' }, translate: null },
   };
   const online = {
@@ -33,7 +42,7 @@ function fixture(at = now) {
   };
   const history = Array.from({ length: 8 }, (_, offset) => {
     const date = iso(at.getTime() - offset * DAY);
-    return { schema_version: 1, generated_at: date, instances: [{ ...item, checked_at: date }] };
+    return { schema_version: 1, generated_at: date, instances: [{ ...structuredClone(item), checked_at: date }] };
   });
   return {
     snapshot: { schema_version: 1, generated_at: checked_at, instances: [item, online] },
@@ -164,8 +173,9 @@ test('streak tracking resets on recovery, gaps, new URLs, legacy data and bad cl
 test('checker writes and resets offline_since, including recovery within the same day', async () => {
   const current = fixture().item;
   const previous = { ...current, checked_at: '2026-11-15T12:00:00.000Z' };
-  const request = async () => ({ status: null, text: '', error: 'timeout', latency_ms: 1 });
-  const result = await checkInstance(dead, { previous, now: () => now, request });
+  const request = async () => ({ status: null, text: '', error: 'connection_error',
+    error_code: 'ECONNREFUSED', error_stage: 'request', resolved_ip: '93.184.216.34', latency_ms: 1 });
+  const result = await checkInstance(dead, { previous, now: () => now, request, sleep: async () => {} });
   assert.equal(result.offline_since, previous.offline_since);
   const recovered = await checkInstance(dead, {
     previous: result, now: () => now,
@@ -173,7 +183,7 @@ test('checker writes and resets offline_since, including recovery within the sam
   });
   assert.equal(recovered.availability, 'degraded');
   assert.equal(recovered.offline_since, null);
-  const failedAgain = await checkInstance(dead, { previous: recovered, now: () => now, request });
+  const failedAgain = await checkInstance(dead, { previous: recovered, now: () => now, request, sleep: async () => {} });
   assert.equal(failedAgain.offline_since, now.toISOString());
   const disabled = await checkInstance({ ...dead, enabled: false }, { previous, now: () => now, request });
   assert.equal(disabled.offline_since, null);
@@ -241,4 +251,44 @@ test('CLI with no candidates leaves catalog unchanged, allowing an existing PR t
   ]);
   assert.equal(await readFile(catalogPath, 'utf8'), original);
   assert.equal(JSON.parse(await readFile(join(directory, 'plan/plan.json'), 'utf8')).candidates.length, 0);
+});
+
+
+test('legacy and inconclusive failures cannot authorize removal, even after eight days', () => {
+  for (const mutate of [
+    item => { delete item.down_check; },
+    item => { item.availability = 'unreachable'; },
+    item => { item.down_check.policy = 'unknown-policy'; },
+    item => { item.down_check.confirmation = null; },
+    item => { item.down_check.confirmation.error_code = 'ENETUNREACH'; },
+    item => { item.down_check.primary.languages.error_code = 'ETIMEDOUT'; },
+    item => { item.down_check.primary.health.resolved_ip = '127.0.0.1'; },
+    item => { item.down_check.confirmation.http_status = 403; },
+  ]) {
+    const data = fixture();
+    mutate(data.item);
+    assert.equal(eligibleOffline(data.item), false);
+    assert.equal(plan(data).candidates.length, 0);
+    const historyOnly = fixture();
+    mutate(historyOnly.history[4].instances[0]);
+    assert.equal(plan(historyOnly).candidates.length, 0);
+  }
+});
+
+test('legacy offline records cannot carry their countdown into the stricter policy', () => {
+  const current = fixture().item;
+  const previous = { ...current, checked_at: '2026-11-15T12:00:00.000Z' };
+  delete previous.down_check;
+  assert.equal(offlineSince(current, previous), current.checked_at);
+  assert.equal(offlineSince({ ...current, availability: 'unreachable' }, fixture().item), null);
+});
+
+test('daily history preserves the refusal proof and explanatory reason', async t => {
+  const directory = await mkdtemp(join(tmpdir(), 'lt-evidence-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const item = { ...fixture().item, languages: [], availability_reason: 'Connection refused on recheck' };
+  await writeOutputs(directory, [item], { now });
+  const day = JSON.parse(await readFile(join(directory, 'history/2026-11-16.json'), 'utf8'));
+  assert.deepEqual(day.instances[0].down_check, item.down_check);
+  assert.equal(day.instances[0].availability_reason, item.availability_reason);
 });

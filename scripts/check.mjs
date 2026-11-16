@@ -32,7 +32,7 @@ async function main() {
   const previous = await readPrevious(directory);
   const results = await checkAll(instances, {
     previous, concurrency, timeoutMs: timeout * 1000, probeTranslation: !values['no-translation'],
-    onResult: item => console.log(`${item.id}: ${item.availability}, anonymous API=${item.api_access}, languages=${item.language_count}`),
+    onResult: item => console.log(`${item.id}: ${item.availability}, anonymous API=${item.api_access}, languages=${item.language_count}${item.availability_reason ? `; ${item.availability_reason}` : ''}`),
   });
   const located = await enrichCountries(results, { previous });
   const { open, report } = await writeOutputs(directory, located, { reportPath: resolve(values.report) });
