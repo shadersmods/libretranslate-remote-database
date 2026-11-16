@@ -1,10 +1,58 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-16T11:37:53.509Z",
+  "generated_at": "2026-11-16T12:16:38.584Z",
   "instances": [
+    {
+      "id": "127903-xyz",
+      "url": "https://127903.xyz",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 10,
+      "translation_http_status": 200
+    },
+    {
+      "id": "157-230-255-151-8085",
+      "url": "http://157.230.255.151:8085",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "165-22-210-69-5111",
+      "url": "http://165.22.210.69:5111",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "186-248-219-194-5001",
+      "url": "http://186.248.219.194:5001",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
     {
       "id": "adminforge",
       "url": "https://translate.adminforge.de",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "api-ml-translate-cider-sh",
+      "url": "https://api-ml-translate.cider.sh",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "cryptimg-directappli-com",
+      "url": "https://cryptimg.directappli.com",
       "availability": "online",
       "api_access": "open",
       "language_count": 50,
@@ -17,6 +65,14 @@
       "api_access": "unverified",
       "language_count": 0,
       "translation_http_status": null
+    },
+    {
+      "id": "demo1-libretranslate-lntechnology-co-th",
+      "url": "https://demo1-libretranslate.lntechnology.co.th",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
     },
     {
       "id": "dialect",
@@ -51,12 +107,60 @@
       "translation_http_status": 200
     },
     {
+      "id": "funnel4-ghost-tint-ts-net-8443",
+      "url": "https://funnel4.ghost-tint.ts.net:8443",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 6,
+      "translation_http_status": 200
+    },
+    {
+      "id": "lecturescribes-net",
+      "url": "https://lecturescribes.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "libretranslate-bolha-tools",
+      "url": "https://libretranslate.bolha.tools",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
       "id": "libretranslate-com",
       "url": "https://libretranslate.com",
       "availability": "online",
       "api_access": "key_required",
       "language_count": 51,
       "translation_http_status": 400
+    },
+    {
+      "id": "libretranslate-ideedusiecle-com",
+      "url": "https://libretranslate.ideedusiecle.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "mrwe-de",
+      "url": "https://mrwe.de",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "opentranslate-devol-it",
+      "url": "https://opentranslate.devol.it",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 13,
+      "translation_http_status": 200
     },
     {
       "id": "osnabrueck",
@@ -81,6 +185,286 @@
       "api_access": "unverified",
       "language_count": 0,
       "translation_http_status": null
+    },
+    {
+      "id": "tr-asturias-red",
+      "url": "https://tr.asturias.red",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "tr-doufei-eu-org",
+      "url": "https://tr.doufei.eu.org",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "tr-uomainfra-fi",
+      "url": "https://tr.uomainfra.fi",
+      "availability": "online",
+      "api_access": "rate_limited",
+      "language_count": 19,
+      "translation_http_status": 429
+    },
+    {
+      "id": "traduzioni-serviziliberi-it",
+      "url": "https://traduzioni.serviziliberi.it",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 43,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-3speak-tv",
+      "url": "https://translate.3speak.tv",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 20,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-blackwallgate-ipv64-net",
+      "url": "https://translate.blackwallgate.ipv64.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-blueva-net",
+      "url": "https://translate.blueva.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-brothertec-eu",
+      "url": "https://translate.brothertec.eu",
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 50,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-cls-ru-nl",
+      "url": "https://translate.cls.ru.nl",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 12,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-cornelcaba-com",
+      "url": "https://translate.cornelcaba.com",
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 2,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-daddelwerk-net",
+      "url": "https://translate.daddelwerk.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-dinosite-net",
+      "url": "https://translate.dinosite.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-direitosdigitais-pt",
+      "url": "https://translate.direitosdigitais.pt",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ecotec-gp",
+      "url": "https://translate.ecotec.gp",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-envs-net",
+      "url": "https://translate.envs.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-filewave-com",
+      "url": "https://translate.filewave.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-geobon-org",
+      "url": "https://translate.geobon.org",
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 50,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-hagocloud-com",
+      "url": "https://translate.hagocloud.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ignifi-eu",
+      "url": "https://translate.ignifi.eu",
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 6,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-ilabhub-atc-gr",
+      "url": "https://translate.ilabhub.atc.gr",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 48,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-libregalaxy-org",
+      "url": "https://translate.libregalaxy.org",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-libresoftware-cloud",
+      "url": "https://translate.libresoftware.cloud",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-mandello-com-br",
+      "url": "https://translate.mandello.com.br",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-multed-com",
+      "url": "https://translate.multed.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-myvoicecountscharitiesfoundation-org",
+      "url": "https://translate.myvoicecountscharitiesfoundation.org",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ondocker-cynapsis-de",
+      "url": "https://translate.ondocker.cynapsis.de",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-orangc-net",
+      "url": "https://translate.orangc.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-peculiar-florist",
+      "url": "https://translate.peculiar.florist",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-retzo-net",
+      "url": "https://translate.retzo.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-sendbazar-net",
+      "url": "https://translate.sendbazar.net",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-splidex-com",
+      "url": "https://translate.splidex.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-tedomum-fr",
+      "url": "https://translate.tedomum.fr",
+      "availability": "offline",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "translate-tedomum-net",
+      "url": "https://translate.tedomum.net",
+      "availability": "offline",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "translate-vnuchkov-su",
+      "url": "https://translate.vnuchkov.su",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-wasyaco-com",
+      "url": "https://translate.wasyaco.com",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
     }
   ]
 }

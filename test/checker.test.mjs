@@ -265,3 +265,59 @@ test('report escapes remote/catalog text rather than inserting HTML or extra tab
   assert.match(report, /\\</);
   assert.match(report, /\\\|/);
 });
+
+
+test('HTTP catalog entries require explicit opt-in and still reject private addresses', () => {
+  const url = 'http://186.248.219.194:5001';
+  assert.throws(() => normalizeUrl(url));
+  assert.equal(normalizeUrl(url + '/', { allowInsecureHttp: true }), url);
+  const entry = { ...instance, url, allow_insecure_http: true };
+  assert.equal(validateCatalog({ schema_version: 1, instances: [entry] })[0].url, url);
+  assert.throws(() => validateCatalog({ schema_version: 1, instances: [{ ...instance, url }] }));
+  assert.throws(() => validateCatalog({ schema_version: 1, instances: [{ ...entry, allow_insecure_http: 'true' }] }));
+  for (const privateUrl of ['http://127.0.0.1:5001', 'http://169.254.169.254', 'http://[::1]', 'http://2130706433']) {
+    assert.throws(() => normalizeUrl(privateUrl, { allowInsecureHttp: true }));
+  }
+  assert.equal(normalizeUrl('https://funnel4.ghost-tint.ts.net:8443/'), 'https://funnel4.ghost-tint.ts.net:8443');
+});
+
+test('HTTP transport is opt-in and keeps public DNS pinning and credential restrictions', async () => {
+  const observed = [];
+  const denied = await requestEndpoint('http://186.248.219.194:5001/languages', {
+    lookup: publicLookup, request: fakeHttps({}, observed),
+  });
+  assert.equal(denied.error, 'unsafe_url');
+  assert.equal(observed.length, 0);
+  const accepted = await requestEndpoint('http://186.248.219.194:5001/languages', {
+    allowInsecureHttp: true, lookup: publicLookup, request: fakeHttps({}, observed),
+  });
+  assert.equal(accepted.status, 200);
+  assert.equal(observed[0].url.protocol, 'http:');
+  assert.equal(observed[0].url.port, '5001');
+  const blocked = await requestEndpoint('http://example.org/', {
+    allowInsecureHttp: true,
+    lookup: async () => [{ address: '127.0.0.1', family: 4 }],
+    request: () => { throw new Error('Must not connect'); },
+  });
+  assert.equal(blocked.error, 'non_public_address');
+  const credentials = await requestEndpoint('http://user:password@example.org/', { allowInsecureHttp: true });
+  assert.equal(credentials.error, 'unsafe_url');
+});
+
+test('the checker passes the HTTP opt-in to every endpoint and preserves its port', async () => {
+  const calls = [];
+  const url = 'http://186.248.219.194:5001';
+  const result = await checkInstance({ ...instance, url, allow_insecure_http: true }, {
+    request: async (address, options) => {
+      calls.push({ address, options });
+      return fixture()(instance.url + new URL(address).pathname, options);
+    },
+  });
+  assert.equal(result.api_access, 'open');
+  assert.equal(result.url, url);
+  assert.equal(calls.length, 5);
+  for (const call of calls) {
+    assert.equal(call.options.allowInsecureHttp, true);
+    assert.equal(new URL(call.address).port, '5001');
+  }
+});

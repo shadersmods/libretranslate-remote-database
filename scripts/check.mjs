@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { appendFile } from 'node:fs/promises';
 import { loadCatalog } from '../lib/catalog.mjs';
 import { checkAll } from '../lib/checker.mjs';
+import { enrichCountries } from '../lib/countries.mjs';
 import { readPrevious, writeOutputs } from '../lib/output.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -33,7 +34,8 @@ async function main() {
     previous, concurrency, timeoutMs: timeout * 1000, probeTranslation: !values['no-translation'],
     onResult: item => console.log(`${item.id}: ${item.availability}, anonymous API=${item.api_access}, languages=${item.language_count}`),
   });
-  const { open, report } = await writeOutputs(directory, results, { reportPath: resolve(values.report) });
+  const located = await enrichCountries(results, { previous });
+  const { open, report } = await writeOutputs(directory, located, { reportPath: resolve(values.report) });
   if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY, report);
   console.log(`Checked ${results.length} instances; ${open.instances.length} passed anonymous translation.`);
 }

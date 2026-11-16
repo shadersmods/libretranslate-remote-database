@@ -1,10 +1,18 @@
+<img src="assets/logo.png" alt="LibreTranslate remote database logo" width="128" height="128">
+
 # LibreTranslate remote database
+
+[![Validation](https://github.com/shadersmods/libretranslate-remote-database/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/shadersmods/libretranslate-remote-database/actions/workflows/validate.yml)
+[![Daily instance checks](https://github.com/shadersmods/libretranslate-remote-database/actions/workflows/check-instances.yml/badge.svg?branch=main)](https://github.com/shadersmods/libretranslate-remote-database/actions/workflows/check-instances.yml)
+[![Node.js 24+](https://img.shields.io/badge/Node.js-24%2B-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![JSON data](https://img.shields.io/badge/data-JSON-0969da)](data/instances.json)
+[![License: MIT](https://img.shields.io/badge/license-MIT-0969da)](LICENSE)
 
 A source-backed catalog of public LibreTranslate candidates, checked daily. A website that loads is not necessarily an open translation API.
 
 [Current status](STATUS.md) · [All results](data/status.json) · [Working anonymous APIs](data/open.json) · [Catalog](data/instances.json)
 
-The initial catalog includes 10 candidates found through the [upstream mirror list](https://docs.libretranslate.com/community/mirrors/) and public LibreTranslate pages. LibreTranslate.com is included as a key-required reference. Search results are candidates, not proof of availability or permission to use an operator's service.
+The catalog combines URLs from the [upstream mirror list](https://docs.libretranslate.com/community/mirrors/), public LibreTranslate pages, and submitted URLs. LibreTranslate.com is included as a key-required reference. Search results are candidates, not proof of availability or permission to use an operator's service.
 
 ## Database files
 
@@ -15,6 +23,10 @@ The initial catalog includes 10 candidates found through the [upstream mirror li
 | `data/open.json` | Only instances that passed the latest anonymous translation check |
 | `data/history/YYYY-MM-DD.json` | Daily summaries, retained for 90 UTC calendar days |
 | `STATUS.md` | Generated status table for people |
+
+The status table shows a flag before each website name, language and file-format counts with hover lists, and the anonymous character limit. A limit of `-1` is shown as Unlimited; a missing limit is shown as a dash.
+
+Countries are approximate hosting locations, based on public server IPs and [Country.is](https://country.is/). They can identify a CDN or proxy location and do not establish the operator's country. Lookups are batched and cached by IP for 30 days. Failed lookups show a globe and do not affect the API result. The report loads flag images from [Flagpedia / Flagcdn](https://flagpedia.net/download/api).
 
 All generated files use `schema_version: 1` and UTC ISO 8601 timestamps. Multiple runs on the same UTC date replace that day's summary. History preserves observations, not continuous uptime measurements. A failed check never deletes an instance from the maintained catalog.
 
@@ -45,7 +57,7 @@ Each enabled server receives four sequential GET requests: `/health`, `/language
 
 Public settings' `keyRequired` is stored separately from the actual anonymous translation result. It does not override a successful or rejected API request. An HTML login or challenge page is never counted as a working translation API. Endpoint failures include DNS, TLS, timeout, oversized body, and HTTP status details. The homepage version is informational: different LibreTranslate versions remain eligible.
 
-The default is three instances at once and ten seconds per request. Requests to one instance are sequential and never retried automatically. TLS verification stays enabled. Bodies are limited to 1 MiB. Redirects are recorded without following them; update the catalog's base URL if a server moves. DNS results must be public addresses and are pinned for the request. Local, private, reserved, and link-local destinations are rejected.
+The default is three instances at once and ten seconds per request. Requests to one instance are sequential and never retried automatically. HTTPS checks keep TLS verification enabled. HTTP-only entries require an explicit `allow_insecure_http: true` opt-in; their traffic is unencrypted. Bodies are limited to 1 MiB. Redirects are recorded without following them; update the catalog's base URL if a server moves. DNS results must be public addresses and are pinned for the request. Local, private, reserved, and link-local destinations are rejected.
 
 ## Run locally
 
@@ -98,6 +110,8 @@ Add an entry to `data/instances.json`, then run `npm run validate` and `npm test
 }
 ```
 
-Use the actual API base URL, preserving deployment prefixes. Do not append `/translate`, put keys in URLs, include private servers, or assume an operator permits general use because a search engine indexed the page. Keep source links for review. This repository does not crawl Google or automatically add unreviewed hosts.
+Use the actual API base URL, preserving deployment prefixes and explicit ports. Prefer HTTPS; an HTTP-only entry must also set `allow_insecure_http` to `true`. Do not append `/translate`, put keys in URLs, include private servers, or assume an operator permits general use because a search engine indexed the page. Keep source links for review. This repository does not crawl Google or automatically add unreviewed hosts.
 
 Set `probe_translation` to `false` to disable POST checks for an operator; its GET information remains available and it cannot enter `open.json` without a successful current probe. Set `enabled` to `false` to make no requests at all. Operators can request removal through a GitHub issue or pull request. Do not submit API keys or other credentials.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution steps and the [Code of Conduct](CODE_OF_CONDUCT.md) for participation rules. Report vulnerabilities through [SECURITY.md](SECURITY.md). This repository uses the [MIT license](LICENSE).

@@ -1,0 +1,28 @@
+name: Operator opt-out or removal
+description: Ask to stop probes or remove a service from the catalog.
+title: "[Operator] "
+body:
+  - type: input
+    id: instance
+    attributes:
+      label: Instance URL or catalog ID
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: Requested action
+      options:
+        - Stop all automated checks
+        - Stop translation POST checks only
+        - Remove the catalog entry
+        - Correct operator or usage information
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Request details
+      description: Explain the change and link a public operator page if available. For private proof of ownership, email neo@shadersmods.com rather than posting it here.
+    validations:
+      required: true

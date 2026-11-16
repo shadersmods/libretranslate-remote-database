@@ -1,0 +1,36 @@
+name: Incorrect instance status
+description: Report an outdated or incorrect check result.
+title: "[Status] "
+body:
+  - type: input
+    id: instance
+    attributes:
+      label: Instance URL or catalog ID
+    validations:
+      required: true
+  - type: input
+    id: checked_at
+    attributes:
+      label: Check timestamp or workflow run
+      description: Copy checked_at from the result or link the GitHub Actions run.
+    validations:
+      required: true
+  - type: textarea
+    id: discrepancy
+    attributes:
+      label: What is incorrect?
+      description: Describe the recorded result and what you observed. Include HTTP status codes when available.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Where was the check run?
+      description: State whether the result came from GitHub Actions or a local run. Describe any proxy or network restrictions without sharing private addresses.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Report contents
+      options:
+        - label: I removed credentials, personal information, and private infrastructure details.
+          required: true

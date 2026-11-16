@@ -1,0 +1,41 @@
+name: Checker or workflow bug
+description: Report a reproducible problem in the checker, output, or automation.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report security vulnerabilities through [SECURITY.md](https://github.com/shadersmods/libretranslate-remote-database/blob/main/SECURITY.md), not this public form.
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or workflow run
+      description: Include the exact commit or a link to the failing run.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include your operating system and Node.js version, or the GitHub Actions runner.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Use a small local fixture where possible.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove API keys, personal information, and private addresses.
+      render: text

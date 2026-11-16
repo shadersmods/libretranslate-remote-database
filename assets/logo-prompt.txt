@@ -1,0 +1,6 @@
+Use case: logo-brand.
+Asset type: square repository icon and README logo for LibreTranslate Remote Database, a catalog that checks public translation servers each day.
+Primary request: create one original, polished software logo. A compact three-tier emerald-green database cylinder is integrated with a simple white translation mark: two small overlapping speech panels carrying only the exact characters A and 文. Make the database and language panels feel like one coherent emblem, with few large shapes and clear negative space, readable at 48 pixels.
+Style: crisp vector-like raster artwork, clean geometry, restrained subtle depth, balanced rounded corners, confident proportions.
+Palette: green #087d44 and bright green #1bd66f, white #edf1f5, charcoal #16181c. Place the emblem on a charcoal rounded-square tile. Preserve genuine alpha transparency outside the tile.
+Composition: single centered logo on a square canvas, icon occupies around 78 percent of the canvas with even safe margins. No wordmark or repository title, no flags, no decorative network dots, no gradients or neon glow, no mockup, no watermark. The only lettering is A and 文.
