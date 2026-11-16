@@ -1,0 +1,54 @@
+name: Check instances
+
+on:
+  schedule:
+    - cron: '17 8 * * *'
+      timezone: Europe/Bucharest
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-instance-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Validate and test the checker
+        run: |
+          npm run validate
+          npm test
+      - name: Check every enabled instance
+        run: npm run check
+      - name: Commit generated results
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin "$DEFAULT_BRANCH" --depth=1
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse FETCH_HEAD)" ]; then
+            echo '::error::The default branch changed during checks. Rerun this workflow against the latest catalog.'
+            exit 1
+          fi
+          git add -- data/status.json data/open.json data/history STATUS.md
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'chore: update daily instance checks [skip ci]'
+          git push origin "HEAD:$DEFAULT_BRANCH"

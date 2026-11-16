@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-16T11:37:53.509Z",
+  "instances": [
+    {
+      "id": "adminforge",
+      "url": "https://translate.adminforge.de",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "cutie-dating",
+      "url": "https://translate.cutie.dating",
+      "availability": "offline",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "dialect",
+      "url": "https://lt.dialectapp.org",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "displ",
+      "url": "https://libretranslate.dev.displ.eu",
+      "availability": "degraded",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "fedilab",
+      "url": "https://translate.fedilab.app",
+      "availability": "degraded",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "fluffynet",
+      "url": "https://translate.fluffynet.dev",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "libretranslate-com",
+      "url": "https://libretranslate.com",
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 51,
+      "translation_http_status": 400
+    },
+    {
+      "id": "osnabrueck",
+      "url": "https://translate.virtuos.uni-osnabrueck.de",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "sans-nuage",
+      "url": "https://traduire.sans-nuage.fr",
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 10,
+      "translation_http_status": 200
+    },
+    {
+      "id": "taketh-is",
+      "url": "https://taketh.is",
+      "availability": "offline",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "../schema/instances.schema.json",
+  "schema_version": 1,
+  "instances": [
+    {
+      "id": "adminforge",
+      "name": "adminForge",
+      "url": "https://translate.adminforge.de",
+      "sources": ["https://translate.adminforge.de/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "cutie-dating",
+      "name": "cutie.dating",
+      "url": "https://translate.cutie.dating",
+      "sources": ["https://docs.libretranslate.com/community/mirrors/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "dialect",
+      "name": "Dialect",
+      "url": "https://lt.dialectapp.org",
+      "sources": ["https://lt.dialectapp.org/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "displ",
+      "name": "displ.eu",
+      "url": "https://libretranslate.dev.displ.eu",
+      "sources": ["https://libretranslate.dev.displ.eu/"],
+      "enabled": true,
+      "probe_translation": true,
+      "notes": "Search-discovered candidate; availability and public API access are determined by checks."
+    },
+    {
+      "id": "fedilab",
+      "name": "Fedilab",
+      "url": "https://translate.fedilab.app",
+      "sources": ["https://docs.libretranslate.com/community/mirrors/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "fluffynet",
+      "name": "Fluffynet",
+      "url": "https://translate.fluffynet.dev",
+      "sources": ["https://translate.fluffynet.dev/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "libretranslate-com",
+      "name": "LibreTranslate.com",
+      "url": "https://libretranslate.com",
+      "sources": ["https://docs.libretranslate.com/community/mirrors/", "https://docs.libretranslate.com/guides/api_usage/"],
+      "enabled": true,
+      "probe_translation": true,
+      "notes": "Official hosted API requires a purchased API key. Kept as a reference; it is not assumed to allow anonymous translation."
+    },
+    {
+      "id": "osnabrueck",
+      "name": "University of Osnabrück",
+      "url": "https://translate.virtuos.uni-osnabrueck.de",
+      "sources": ["https://translate.virtuos.uni-osnabrueck.de/"],
+      "enabled": true,
+      "probe_translation": true,
+      "notes": "Search-discovered candidate. A public page does not establish permission for general API use."
+    },
+    {
+      "id": "sans-nuage",
+      "name": "Sans Nuage",
+      "url": "https://traduire.sans-nuage.fr",
+      "sources": ["https://traduire.sans-nuage.fr/"],
+      "enabled": true,
+      "probe_translation": true
+    },
+    {
+      "id": "taketh-is",
+      "name": "taketh.is",
+      "url": "https://taketh.is",
+      "sources": ["https://taketh.is/"],
+      "enabled": true,
+      "probe_translation": true,
+      "notes": "Search-discovered candidate; availability and public API access are determined by checks."
+    }
+  ]
+}
