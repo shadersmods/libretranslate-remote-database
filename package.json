@@ -9,6 +9,8 @@
   "scripts": {
     "test": "node --test",
     "validate": "node scripts/check.mjs --validate",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "cleanup:plan": "node scripts/cleanup.mjs",
+    "cleanup:prepare": "node scripts/cleanup.mjs --apply"
   }
 }

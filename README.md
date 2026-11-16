@@ -12,23 +12,23 @@ A source-backed catalog of public LibreTranslate candidates, checked daily. A we
 
 [Current status](STATUS.md) · [All results](data/status.json) · [Working anonymous APIs](data/open.json) · [Catalog](data/instances.json)
 
-The catalog combines URLs from the [upstream mirror list](https://docs.libretranslate.com/community/mirrors/), public LibreTranslate pages, and submitted URLs. LibreTranslate.com is included as a key-required reference. Search results are candidates, not proof of availability or permission to use an operator's service.
+**Note:** Search results are candidates, not proof of availability or permission to use an operator's service.
 
 ## Database files
 
-| File | Purpose |
-| --- | --- |
-| `data/instances.json` | Maintained URLs, names, source links, and opt-out switches |
-| `data/status.json` | Latest endpoint results, languages, formats, limits, versions, and timestamps |
-| `data/open.json` | Only instances that passed the latest anonymous translation check |
-| `data/history/YYYY-MM-DD.json` | Daily summaries, retained for 90 UTC calendar days |
-| `STATUS.md` | Generated status table for people |
+| File                           | Purpose                                                                       |
+| ------------------------------ | ----------------------------------------------------------------------------- |
+| `data/instances.json`          | Maintained URLs, names, source links, and opt-out switches                    |
+| `data/status.json`             | Latest endpoint results, languages, formats, limits, versions, and timestamps |
+| `data/open.json`               | Only instances that passed the latest anonymous translation check             |
+| `data/history/YYYY-MM-DD.json` | Daily summaries, retained for 90 UTC calendar days                            |
+| `STATUS.md`                    | Generated status table for people                                             |
 
 The status table shows a flag before each website name, language and file-format counts with hover lists, and the anonymous character limit. A limit of `-1` is shown as Unlimited; a missing limit is shown as a dash.
 
 Countries are approximate hosting locations, based on public server IPs and [Country.is](https://country.is/). They can identify a CDN or proxy location and do not establish the operator's country. Lookups are batched and cached by IP for 30 days. Failed lookups show a globe and do not affect the API result. The report loads flag images from [Flagpedia / Flagcdn](https://flagpedia.net/download/api).
 
-All generated files use `schema_version: 1` and UTC ISO 8601 timestamps. Multiple runs on the same UTC date replace that day's summary. History preserves observations, not continuous uptime measurements. A failed check never deletes an instance from the maintained catalog.
+All generated files use `schema_version: 1` and UTC ISO 8601 timestamps. Multiple runs on the same UTC date replace that day's summary. History preserves observations, not continuous uptime measurements. Failed checks leave the maintained catalog in place. The daily workflow proposes removal through a reviewed pull request after the offline threshold below is met.
 
 For a GUI or another client, fetch the open list:
 
@@ -44,14 +44,14 @@ Each enabled server receives four sequential GET requests: `/health`, `/language
 
 `api_access` describes the observed anonymous API response:
 
-| Value | Meaning |
-| --- | --- |
-| `open` | A 2xx response contained a nonempty `translatedText` |
-| `key_required` | The server rejected the anonymous request with an API-key error |
-| `authentication_required` | HTTP 401 without an API-key-specific error |
-| `rate_limited` | HTTP 429; `Retry-After` is recorded when present |
-| `blocked` | Access was forbidden or the response was not translation JSON |
-| `unverified` | Skipped, unreachable, malformed, or another inconclusive response |
+| Value                     | Meaning                                                           |
+| ------------------------- | ----------------------------------------------------------------- |
+| `open`                    | A 2xx response contained a nonempty `translatedText`              |
+| `key_required`            | The server rejected the anonymous request with an API-key error   |
+| `authentication_required` | HTTP 401 without an API-key-specific error                        |
+| `rate_limited`            | HTTP 429; `Retry-After` is recorded when present                  |
+| `blocked`                 | Access was forbidden or the response was not translation JSON     |
+| `unverified`              | Skipped, unreachable, malformed, or another inconclusive response |
 
 `availability` is `online` when language discovery and a recognizable translation response succeed; an opted-out translation probe can also be `online` with valid languages and health. A responding server with incomplete API checks is `degraded`. A server without any HTTP response is `offline`. An opted-out entry is `disabled`. These describe the checker's network vantage point. WAF rules, geographic restrictions, and rate limits can produce different results elsewhere.
 
@@ -67,6 +67,7 @@ Requires Node.js 24 or later. No dependency installation, database server, API k
 npm run validate
 npm test
 npm run check
+npm run cleanup:plan
 ```
 
 Optional controls:
@@ -87,12 +88,29 @@ To activate it:
 
 1. Commit and push this repository to its GitHub default branch (`main`).
 2. Enable Actions for the repository if disabled.
-3. Allow the workflow's `contents: write` permission under your repository/organization policy. Branch rules must allow the bot's generated-data commits; otherwise use a permitted results branch or change publication to pull requests.
-4. Run **Actions → Check instances → Run workflow** once to verify the first hosted check.
+3. Allow the workflow's `contents: write` and `pull-requests: write` permissions under your repository/organization policy. Branch rules must allow the bot's generated-data commits; otherwise use a permitted results branch or change publication to pull requests.
+4. Under **Settings → Actions → General → Workflow permissions**, enable **Allow GitHub Actions to create and approve pull requests**. Organization policy may control this setting; see [GitHub's instructions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#preventing-github-actions-from-creating-or-approving-pull-requests).
+5. Run **Actions → Check instances → Run workflow** once to verify the first hosted check.
 
 The local generated results do not mean the GitHub schedule has run. GitHub schedules run from the default branch and can be delayed; public repositories' inactive schedules can be disabled after 60 days. See [GitHub's schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 Pull requests run offline tests and catalog validation with a read-only token. They do not probe proposed URLs or commit results. Action versions are pinned to immutable commits and Dependabot checks for updates weekly. Concurrent daily runs queue rather than overwriting each other.
+
+## Removal pull requests
+
+After publishing the daily results, the workflow prepares one pull request on `automation/remove-offline-instances`. It proposes removing entries from `data/instances.json` only when:
+
+- The latest check is `offline` and the recorded outage spans **more than seven full days**.
+- Eight consecutive UTC dates have offline observations for the same instance URL and outage start time.
+- The current results are fresh, and at least one other enabled instance returned an HTTP response.
+
+`offline_since` records the first failed check in the current streak. Any HTTP response, including an API-key requirement, rate limit, or degraded service, breaks the streak. A skipped UTC date, a gap over 36 hours, a changed URL, or a disabled instance resets or excludes it. Repeated checks on one day do not count as extra days. Tracking starts with the first check using this version; older summaries are not backfilled.
+
+The PR lists outage timestamps and links to daily evidence. Subsequent runs update the same PR, drop recovered sites, and close it if no candidates remain. A maintainer reviews and merges removals. Observations from this checker cannot prove continuous downtime or rule out a regional network problem.
+
+Use `npm run cleanup:plan` to inspect `.cleanup/plan.json` and `.cleanup/pull-request.md` without changing the catalog. The workflow uses `npm run cleanup:prepare` to prepare catalog changes, then validates and tests them before opening the PR. These commands make no network requests or Git changes. The `.cleanup/` directory is ignored by Git.
+
+The workflow uses the built-in `GITHUB_TOKEN` and a [pinned Create Pull Request action](https://github.com/peter-evans/create-pull-request). GitHub can require a maintainer to select **Approve workflows to run** on bot-created PRs; see [GitHub's workflow-trigger rules](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow#triggering-a-workflow-from-a-workflow). If hosted validation is required, approve the pending runs or manually run **Validate database and checker** on the removal branch before merging.
 
 ## Add or remove an instance
 
