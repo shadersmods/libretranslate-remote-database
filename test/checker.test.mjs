@@ -1,6 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { EventEmitter } from 'node:events';
+import { execFile } from 'node:child_process';
+import { promisify } from 'node:util';
+import { fileURLToPath } from 'node:url';
 import { mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -207,11 +210,19 @@ test('transport pins validated DNS, verifies TLS by default, and does not follow
   assert.equal(observed.length, 1);
   assert.equal(observed[0].options.rejectUnauthorized, undefined);
   assert.equal(observed[0].options.agent, false);
-  observed[0].options.lookup('example.org', {}, (error, address, family) => {
-    assert.equal(error, null);
-    assert.equal(address, '93.184.216.34');
-    assert.equal(family, 4);
-  });
+  assert.equal(observed[0].options.family, 4);
+  assert.equal(observed[0].options.autoSelectFamily, false);
+  for (const all of [false, true]) {
+    let synchronous = true;
+    const completed = new Promise(resolve => {
+      observed[0].options.lookup('example.org', { all }, (...args) => resolve({ synchronous, args }));
+    });
+    synchronous = false;
+    const delivered = await completed;
+    assert.equal(delivered.synchronous, false);
+    const { args } = delivered;
+    assert.deepEqual(args, all ? [null, [{ address: '93.184.216.34', family: 4 }]] : [null, '93.184.216.34', 4]);
+  }
 });
 
 test('transport refuses mixed public/private DNS answers before opening a connection', async () => {
@@ -320,4 +331,50 @@ test('the checker passes the HTTP opt-in to every endpoint and preserves its por
     assert.equal(call.options.allowInsecureHttp, true);
     assert.equal(new URL(call.address).port, '5001');
   }
+});
+
+test('immediate IPv4 and IPv6 socket failures cannot crash the checker process', async () => {
+  // Exercise real ClientRequest/TLSSocket event ordering in a child process.
+  // The connection method is replaced there, so no external sockets are opened.
+  const script = `
+    import assert from 'node:assert/strict';
+    import { Socket } from 'node:net';
+    import { requestEndpoint } from './lib/http.mjs';
+    const original = Socket.prototype.connect;
+    let connections = 0;
+    Socket.prototype.connect = function(options) {
+      connections++;
+      this.connecting = true;
+      const all = options.family !== 4 && options.family !== 6;
+      options.lookup(options.host, { all }, (error, address, family) => {
+        assert.equal(error, null);
+        const target = all ? address[0] : { address, family };
+        assert.ok(target.family === 4 || target.family === 6);
+        this.destroy(Object.assign(new Error('connect ENETUNREACH'), { code: 'ENETUNREACH' }));
+      });
+      return this;
+    };
+    try {
+      for (const family of [4, 6]) {
+        const address = family === 4 ? '93.184.216.34' : '2606:4700:4700::1111';
+        for (const protocol of ['http:', 'https:']) {
+          const result = await requestEndpoint(protocol + '//unreachable.example.org/health', {
+            allowInsecureHttp: true, timeoutMs: 1000,
+            lookup: async () => [{ address, family }],
+          });
+          assert.equal(result.error, 'connection_error');
+          assert.equal(result.status, null);
+          assert.equal(result.resolved_ip, address);
+        }
+      }
+      assert.equal(connections, 4);
+      console.log('All four connection failures were recorded.');
+    } finally {
+      Socket.prototype.connect = original;
+    }
+  `;
+  const { stdout } = await promisify(execFile)(process.execPath, ['--input-type=module', '-e', script], {
+    cwd: fileURLToPath(new URL('../', import.meta.url)), timeout: 5000,
+  });
+  assert.match(stdout, /All four connection failures were recorded/);
 });
