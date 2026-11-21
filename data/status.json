@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T15:35:07.544Z",
+  "generated_at": "2026-11-21T14:45:34.690Z",
   "instances": [
     {
       "id": "127903-xyz",
       "name": "127903.xyz",
       "url": "https://127903.xyz",
-      "checked_at": "2026-11-20T15:33:55.881Z",
+      "checked_at": "2026-11-21T14:44:29.803Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -198,7 +198,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "172.67.167.245",
-        "latency_ms": 327,
+        "latency_ms": 371,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -206,8 +206,8 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "172.67.167.245",
-          "latency_ms": 602,
+          "resolved_ip": "104.21.13.123",
+          "latency_ms": 695,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -215,7 +215,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "172.67.167.245",
-          "latency_ms": 472,
+          "latency_ms": 248,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -223,15 +223,15 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "172.67.167.245",
-          "latency_ms": 223,
+          "latency_ms": 643,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "104.21.13.123",
-          "latency_ms": 237,
+          "resolved_ip": "172.67.167.245",
+          "latency_ms": 262,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -239,13 +239,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "172.67.167.245",
-          "latency_ms": 327,
+          "latency_ms": 371,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:55.881Z",
+      "last_open_at": "2026-11-21T14:44:29.803Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -253,7 +253,7 @@
       "id": "157-230-255-151-8085",
       "name": "157.230.255.151:8085",
       "url": "http://157.230.255.151:8085",
-      "checked_at": "2026-11-20T15:33:55.883Z",
+      "checked_at": "2026-11-21T14:44:29.805Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -2980,7 +2980,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "157.230.255.151",
-        "latency_ms": 379,
+        "latency_ms": 403,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -2989,7 +2989,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "157.230.255.151",
-          "latency_ms": 376,
+          "latency_ms": 404,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -2997,7 +2997,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "157.230.255.151",
-          "latency_ms": 555,
+          "latency_ms": 617,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3005,7 +3005,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "157.230.255.151",
-          "latency_ms": 386,
+          "latency_ms": 395,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3013,7 +3013,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "157.230.255.151",
-          "latency_ms": 592,
+          "latency_ms": 610,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3021,13 +3021,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "157.230.255.151",
-          "latency_ms": 379,
+          "latency_ms": 403,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:55.883Z",
+      "last_open_at": "2026-11-21T14:44:29.805Z",
       "consecutive_failures": 0,
       "country": {
         "code": "SG",
@@ -3041,7 +3041,7 @@
       "id": "165-22-210-69-5111",
       "name": "165.22.210.69:5111",
       "url": "http://165.22.210.69:5111",
-      "checked_at": "2026-11-20T15:33:55.883Z",
+      "checked_at": "2026-11-21T14:44:29.805Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -3089,7 +3089,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "165.22.210.69",
-        "latency_ms": 474,
+        "latency_ms": 453,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -3098,7 +3098,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "165.22.210.69",
-          "latency_ms": 494,
+          "latency_ms": 514,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3106,7 +3106,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "165.22.210.69",
-          "latency_ms": 475,
+          "latency_ms": 456,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3114,7 +3114,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "165.22.210.69",
-          "latency_ms": 472,
+          "latency_ms": 486,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3122,7 +3122,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "165.22.210.69",
-          "latency_ms": 710,
+          "latency_ms": 683,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3130,13 +3130,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "165.22.210.69",
-          "latency_ms": 474,
+          "latency_ms": 453,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:55.883Z",
+      "last_open_at": "2026-11-21T14:44:29.805Z",
       "consecutive_failures": 0,
       "country": {
         "code": "IN",
@@ -3150,7 +3150,7 @@
       "id": "186-248-219-194-5001",
       "name": "186.248.219.194:5001",
       "url": "http://186.248.219.194:5001",
-      "checked_at": "2026-11-20T15:33:57.743Z",
+      "checked_at": "2026-11-21T14:44:32.025Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -3237,7 +3237,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "186.248.219.194",
-        "latency_ms": 410,
+        "latency_ms": 312,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -3246,7 +3246,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "186.248.219.194",
-          "latency_ms": 425,
+          "latency_ms": 323,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3254,7 +3254,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "186.248.219.194",
-          "latency_ms": 408,
+          "latency_ms": 309,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3262,7 +3262,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "186.248.219.194",
-          "latency_ms": 423,
+          "latency_ms": 322,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3270,7 +3270,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "186.248.219.194",
-          "latency_ms": 639,
+          "latency_ms": 467,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -3278,13 +3278,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "186.248.219.194",
-          "latency_ms": 410,
+          "latency_ms": 312,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:57.743Z",
+      "last_open_at": "2026-11-21T14:44:32.025Z",
       "consecutive_failures": 0,
       "country": {
         "code": "BR",
@@ -3298,7 +3298,7 @@
       "id": "adminforge",
       "name": "adminForge",
       "url": "https://translate.adminforge.de",
-      "checked_at": "2026-11-20T15:33:58.171Z",
+      "checked_at": "2026-11-21T14:44:32.235Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -6130,7 +6130,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "159.69.72.33",
-        "latency_ms": 730,
+        "latency_ms": 528,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -6139,7 +6139,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "159.69.72.33",
-          "latency_ms": 565,
+          "latency_ms": 628,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -6147,7 +6147,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "159.69.72.33",
-          "latency_ms": 688,
+          "latency_ms": 527,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -6155,7 +6155,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "159.69.72.33",
-          "latency_ms": 507,
+          "latency_ms": 376,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -6163,7 +6163,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "159.69.72.33",
-          "latency_ms": 680,
+          "latency_ms": 491,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -6171,13 +6171,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "159.69.72.33",
-          "latency_ms": 730,
+          "latency_ms": 528,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:58.171Z",
+      "last_open_at": "2026-11-21T14:44:32.235Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -6191,7 +6191,7 @@
       "id": "api-ml-translate-cider-sh",
       "name": "api-ml-translate.cider.sh",
       "url": "https://api-ml-translate.cider.sh",
-      "checked_at": "2026-11-20T15:33:58.509Z",
+      "checked_at": "2026-11-21T14:44:32.398Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -9022,8 +9022,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "104.26.7.88",
-        "latency_ms": 365,
+        "resolved_ip": "172.67.74.147",
+        "latency_ms": 240,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -9031,24 +9031,24 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "104.26.6.88",
-          "latency_ms": 515,
+          "resolved_ip": "172.67.74.147",
+          "latency_ms": 365,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "104.26.7.88",
-          "latency_ms": 117,
+          "resolved_ip": "104.26.6.88",
+          "latency_ms": 190,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "104.26.6.88",
-          "latency_ms": 247,
+          "resolved_ip": "104.26.7.88",
+          "latency_ms": 100,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -9056,21 +9056,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "104.26.6.88",
-          "latency_ms": 194,
+          "latency_ms": 109,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "104.26.7.88",
-          "latency_ms": 365,
+          "resolved_ip": "172.67.74.147",
+          "latency_ms": 240,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:58.509Z",
+      "last_open_at": "2026-11-21T14:44:32.398Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -9078,7 +9078,7 @@
       "id": "cryptimg-directappli-com",
       "name": "cryptimg.directappli.com",
       "url": "https://cryptimg.directappli.com",
-      "checked_at": "2026-11-20T15:33:59.948Z",
+      "checked_at": "2026-11-21T14:44:33.403Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -11909,8 +11909,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "172.67.151.127",
-        "latency_ms": 315,
+        "resolved_ip": "104.21.0.247",
+        "latency_ms": 248,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -11918,8 +11918,8 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "104.21.0.247",
-          "latency_ms": 696,
+          "resolved_ip": "172.67.151.127",
+          "latency_ms": 557,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -11927,15 +11927,15 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "104.21.0.247",
-          "latency_ms": 274,
+          "latency_ms": 622,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "172.67.151.127",
-          "latency_ms": 247,
+          "resolved_ip": "104.21.0.247",
+          "latency_ms": 263,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -11943,21 +11943,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "104.21.0.247",
-          "latency_ms": 770,
+          "latency_ms": 268,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "172.67.151.127",
-          "latency_ms": 315,
+          "resolved_ip": "104.21.0.247",
+          "latency_ms": 248,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:33:59.948Z",
+      "last_open_at": "2026-11-21T14:44:33.403Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -11965,7 +11965,7 @@
       "id": "cutie-dating",
       "name": "cutie.dating",
       "url": "https://translate.cutie.dating",
-      "checked_at": "2026-11-20T15:34:00.049Z",
+      "checked_at": "2026-11-21T14:44:33.758Z",
       "availability": "unreachable",
       "availability_reason": "No HTTP response before the request deadline",
       "down_check": {
@@ -11982,7 +11982,7 @@
           "languages": {
             "http_status": null,
             "resolved_ip": "109.230.238.120",
-            "latency_ms": 9999,
+            "latency_ms": 10000,
             "error": "timeout",
             "error_code": "ETIMEDOUT",
             "error_stage": "request"
@@ -11990,7 +11990,7 @@
           "settings": {
             "http_status": null,
             "resolved_ip": "109.230.238.120",
-            "latency_ms": 10002,
+            "latency_ms": 10001,
             "error": "timeout",
             "error_code": "ETIMEDOUT",
             "error_stage": "request"
@@ -11998,7 +11998,7 @@
           "homepage": {
             "http_status": null,
             "resolved_ip": "109.230.238.120",
-            "latency_ms": 10000,
+            "latency_ms": 10001,
             "error": "timeout",
             "error_code": "ETIMEDOUT",
             "error_stage": "request"
@@ -12007,7 +12007,7 @@
         "confirmation": {
           "http_status": null,
           "resolved_ip": "109.230.238.120",
-          "latency_ms": 15001,
+          "latency_ms": 15002,
           "error": "timeout",
           "error_code": "ETIMEDOUT",
           "error_stage": "request"
@@ -12038,7 +12038,7 @@
         "languages": {
           "http_status": null,
           "resolved_ip": "109.230.238.120",
-          "latency_ms": 15001,
+          "latency_ms": 15002,
           "error": "timeout",
           "error_code": "ETIMEDOUT",
           "error_stage": "request"
@@ -12046,7 +12046,7 @@
         "settings": {
           "http_status": null,
           "resolved_ip": "109.230.238.120",
-          "latency_ms": 10002,
+          "latency_ms": 10001,
           "error": "timeout",
           "error_code": "ETIMEDOUT",
           "error_stage": "request"
@@ -12054,7 +12054,7 @@
         "homepage": {
           "http_status": null,
           "resolved_ip": "109.230.238.120",
-          "latency_ms": 10000,
+          "latency_ms": 10001,
           "error": "timeout",
           "error_code": "ETIMEDOUT",
           "error_stage": "request"
@@ -12062,7 +12062,7 @@
         "translate": null
       },
       "last_open_at": null,
-      "consecutive_failures": 8,
+      "consecutive_failures": 9,
       "country": {
         "code": "DE",
         "name": "Germany",
@@ -12075,7 +12075,7 @@
       "id": "demo1-libretranslate-lntechnology-co-th",
       "name": "demo1-libretranslate.lntechnology.co.th",
       "url": "https://demo1-libretranslate.lntechnology.co.th",
-      "checked_at": "2026-11-20T15:34:01.343Z",
+      "checked_at": "2026-11-21T14:44:34.786Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -12122,8 +12122,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "172.67.211.242",
-        "latency_ms": 595,
+        "resolved_ip": "104.21.59.35",
+        "latency_ms": 1433,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -12132,23 +12132,23 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "172.67.211.242",
-          "latency_ms": 975,
+          "latency_ms": 1599,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "104.21.59.35",
-          "latency_ms": 303,
+          "resolved_ip": "172.67.211.242",
+          "latency_ms": 307,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "172.67.211.242",
-          "latency_ms": 271,
+          "resolved_ip": "104.21.59.35",
+          "latency_ms": 305,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -12156,21 +12156,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "172.67.211.242",
-          "latency_ms": 921,
+          "latency_ms": 363,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "172.67.211.242",
-          "latency_ms": 595,
+          "resolved_ip": "104.21.59.35",
+          "latency_ms": 1433,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:01.343Z",
+      "last_open_at": "2026-11-21T14:44:34.786Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -12178,7 +12178,7 @@
       "id": "dialect",
       "name": "Dialect",
       "url": "https://lt.dialectapp.org",
-      "checked_at": "2026-11-20T15:34:02.250Z",
+      "checked_at": "2026-11-21T14:44:35.362Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -14754,8 +14754,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "172.67.179.172",
-        "latency_ms": 579,
+        "resolved_ip": "104.21.18.28",
+        "latency_ms": 293,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -14763,24 +14763,24 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "104.21.18.28",
-          "latency_ms": 835,
+          "resolved_ip": "172.67.179.172",
+          "latency_ms": 668,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "104.21.18.28",
-          "latency_ms": 431,
+          "resolved_ip": "172.67.179.172",
+          "latency_ms": 648,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "172.67.179.172",
-          "latency_ms": 264,
+          "resolved_ip": "104.21.18.28",
+          "latency_ms": 173,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14788,21 +14788,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "172.67.179.172",
-          "latency_ms": 899,
+          "latency_ms": 173,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "172.67.179.172",
-          "latency_ms": 579,
+          "resolved_ip": "104.21.18.28",
+          "latency_ms": 293,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:02.250Z",
+      "last_open_at": "2026-11-21T14:44:35.362Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -14810,7 +14810,7 @@
       "id": "displ",
       "name": "displ.eu",
       "url": "https://libretranslate.dev.displ.eu",
-      "checked_at": "2026-11-20T15:34:04.408Z",
+      "checked_at": "2026-11-21T14:44:37.318Z",
       "availability": "degraded",
       "availability_reason": "HTTP 503; API check incomplete",
       "down_check": null,
@@ -14831,7 +14831,7 @@
         "health": {
           "http_status": 503,
           "resolved_ip": "167.233.10.205",
-          "latency_ms": 969,
+          "latency_ms": 877,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14839,7 +14839,7 @@
         "languages": {
           "http_status": 503,
           "resolved_ip": "167.233.10.205",
-          "latency_ms": 533,
+          "latency_ms": 391,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14847,7 +14847,7 @@
         "settings": {
           "http_status": 503,
           "resolved_ip": "167.233.10.205",
-          "latency_ms": 533,
+          "latency_ms": 393,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14855,7 +14855,7 @@
         "homepage": {
           "http_status": 503,
           "resolved_ip": "167.233.10.205",
-          "latency_ms": 529,
+          "latency_ms": 390,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14863,7 +14863,7 @@
         "translate": null
       },
       "last_open_at": null,
-      "consecutive_failures": 8,
+      "consecutive_failures": 9,
       "country": {
         "code": "DE",
         "name": "Germany",
@@ -14876,7 +14876,7 @@
       "id": "fedilab",
       "name": "Fedilab",
       "url": "https://translate.fedilab.app",
-      "checked_at": "2026-11-20T15:34:05.260Z",
+      "checked_at": "2026-11-21T14:44:38.792Z",
       "availability": "degraded",
       "availability_reason": "HTTP 403; API check incomplete",
       "down_check": null,
@@ -14897,7 +14897,7 @@
         "health": {
           "http_status": 403,
           "resolved_ip": "65.109.77.92",
-          "latency_ms": 582,
+          "latency_ms": 478,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14905,7 +14905,7 @@
         "languages": {
           "http_status": 403,
           "resolved_ip": "65.109.77.92",
-          "latency_ms": 506,
+          "latency_ms": 417,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14913,7 +14913,7 @@
         "settings": {
           "http_status": 403,
           "resolved_ip": "65.109.77.92",
-          "latency_ms": 513,
+          "latency_ms": 416,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14921,7 +14921,7 @@
         "homepage": {
           "http_status": 403,
           "resolved_ip": "65.109.77.92",
-          "latency_ms": 514,
+          "latency_ms": 419,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -14929,7 +14929,7 @@
         "translate": null
       },
       "last_open_at": null,
-      "consecutive_failures": 8,
+      "consecutive_failures": 9,
       "country": {
         "code": "FI",
         "name": "Finland",
@@ -14942,7 +14942,7 @@
       "id": "fluffynet",
       "name": "Fluffynet",
       "url": "https://translate.fluffynet.dev",
-      "checked_at": "2026-11-20T15:34:06.973Z",
+      "checked_at": "2026-11-21T14:44:39.370Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -15028,8 +15028,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "104.21.66.167",
-        "latency_ms": 522,
+        "resolved_ip": "172.67.162.82",
+        "latency_ms": 505,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -15038,45 +15038,45 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "172.67.162.82",
-          "latency_ms": 792,
+          "latency_ms": 522,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "104.21.66.167",
-          "latency_ms": 723,
+          "resolved_ip": "172.67.162.82",
+          "latency_ms": 487,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "104.21.66.167",
-          "latency_ms": 308,
+          "resolved_ip": "172.67.162.82",
+          "latency_ms": 174,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "104.21.66.167",
-          "latency_ms": 378,
+          "resolved_ip": "172.67.162.82",
+          "latency_ms": 175,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "104.21.66.167",
-          "latency_ms": 522,
+          "resolved_ip": "172.67.162.82",
+          "latency_ms": 505,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:06.973Z",
+      "last_open_at": "2026-11-21T14:44:39.370Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -15084,7 +15084,7 @@
       "id": "funnel4-ghost-tint-ts-net-8443",
       "name": "funnel4.ghost-tint.ts.net:8443",
       "url": "https://funnel4.ghost-tint.ts.net:8443",
-      "checked_at": "2026-11-20T15:34:07.375Z",
+      "checked_at": "2026-11-21T14:44:40.522Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -15187,8 +15187,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "208.111.34.11",
-        "latency_ms": 973,
+        "resolved_ip": "208.111.35.209",
+        "latency_ms": 756,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -15197,15 +15197,15 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "208.111.34.11",
-          "latency_ms": 476,
+          "latency_ms": 737,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "208.111.34.11",
-          "latency_ms": 254,
+          "resolved_ip": "208.111.35.209",
+          "latency_ms": 341,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -15213,43 +15213,43 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "208.111.34.11",
-          "latency_ms": 247,
+          "latency_ms": 439,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "208.111.34.11",
-          "latency_ms": 259,
+          "resolved_ip": "208.111.35.209",
+          "latency_ms": 322,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "208.111.34.11",
-          "latency_ms": 973,
+          "resolved_ip": "208.111.35.209",
+          "latency_ms": 756,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:07.375Z",
+      "last_open_at": "2026-11-21T14:44:40.522Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
         "name": "United States",
-        "ip": "208.111.34.11",
+        "ip": "208.111.35.209",
         "source": "https://country.is",
-        "checked_at": "2026-11-19T15:54:16.267Z"
+        "checked_at": "2026-11-21T14:45:34.467Z"
       }
     },
     {
       "id": "lecturescribes-net",
       "name": "lecturescribes.net",
       "url": "https://lecturescribes.net",
-      "checked_at": "2026-11-20T15:34:09.584Z",
+      "checked_at": "2026-11-21T14:44:41.233Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -17976,7 +17976,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "147.93.144.4",
-        "latency_ms": 301,
+        "latency_ms": 184,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -17985,7 +17985,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "147.93.144.4",
-          "latency_ms": 437,
+          "latency_ms": 402,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -17993,7 +17993,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "147.93.144.4",
-          "latency_ms": 379,
+          "latency_ms": 247,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -18001,7 +18001,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "147.93.144.4",
-          "latency_ms": 304,
+          "latency_ms": 382,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -18009,7 +18009,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "147.93.144.4",
-          "latency_ms": 428,
+          "latency_ms": 272,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -18017,13 +18017,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "147.93.144.4",
-          "latency_ms": 301,
+          "latency_ms": 184,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:09.584Z",
+      "last_open_at": "2026-11-21T14:44:41.233Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -18037,7 +18037,7 @@
       "id": "libretranslate-bolha-tools",
       "name": "libretranslate.bolha.tools",
       "url": "https://libretranslate.bolha.tools",
-      "checked_at": "2026-11-20T15:34:09.696Z",
+      "checked_at": "2026-11-21T14:44:42.721Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -20869,7 +20869,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "15.235.51.205",
-        "latency_ms": 1287,
+        "latency_ms": 1204,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -20878,7 +20878,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "15.235.51.205",
-          "latency_ms": 317,
+          "latency_ms": 519,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -20886,7 +20886,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "15.235.51.205",
-          "latency_ms": 239,
+          "latency_ms": 122,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -20894,7 +20894,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "15.235.51.205",
-          "latency_ms": 224,
+          "latency_ms": 108,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -20902,7 +20902,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "15.235.51.205",
-          "latency_ms": 230,
+          "latency_ms": 137,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -20910,13 +20910,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "15.235.51.205",
-          "latency_ms": 1287,
+          "latency_ms": 1204,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:09.696Z",
+      "last_open_at": "2026-11-21T14:44:42.721Z",
       "consecutive_failures": 0,
       "country": {
         "code": "CA",
@@ -20930,7 +20930,7 @@
       "id": "libretranslate-com",
       "name": "LibreTranslate.com",
       "url": "https://libretranslate.com",
-      "checked_at": "2026-11-20T15:34:11.433Z",
+      "checked_at": "2026-11-21T14:44:43.118Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -23868,8 +23868,8 @@
         },
         "skipped": null,
         "http_status": 400,
-        "resolved_ip": "172.67.213.179",
-        "latency_ms": 837,
+        "resolved_ip": "104.21.93.181",
+        "latency_ms": 172,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -23878,7 +23878,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "104.21.93.181",
-          "latency_ms": 815,
+          "latency_ms": 220,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -23886,31 +23886,31 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "104.21.93.181",
-          "latency_ms": 450,
+          "latency_ms": 290,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "104.21.93.181",
-          "latency_ms": 246,
+          "resolved_ip": "172.67.213.179",
+          "latency_ms": 167,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "172.67.213.179",
-          "latency_ms": 242,
+          "resolved_ip": "104.21.93.181",
+          "latency_ms": 189,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 400,
-          "resolved_ip": "172.67.213.179",
-          "latency_ms": 837,
+          "resolved_ip": "104.21.93.181",
+          "latency_ms": 172,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -23924,7 +23924,7 @@
       "id": "libretranslate-ideedusiecle-com",
       "name": "libretranslate.ideedusiecle.com",
       "url": "https://libretranslate.ideedusiecle.com",
-      "checked_at": "2026-11-20T15:34:11.995Z",
+      "checked_at": "2026-11-21T14:44:44.157Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -23971,8 +23971,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "104.21.71.181",
-        "latency_ms": 999,
+        "resolved_ip": "172.67.147.248",
+        "latency_ms": 177,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -23980,46 +23980,46 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "104.21.71.181",
-          "latency_ms": 778,
+          "resolved_ip": "172.67.147.248",
+          "latency_ms": 560,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "104.21.71.181",
-          "latency_ms": 596,
+          "resolved_ip": "172.67.147.248",
+          "latency_ms": 184,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "104.21.71.181",
-          "latency_ms": 235,
+          "resolved_ip": "172.67.147.248",
+          "latency_ms": 486,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "172.67.147.248",
-          "latency_ms": 313,
+          "resolved_ip": "104.21.71.181",
+          "latency_ms": 208,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "104.21.71.181",
-          "latency_ms": 999,
+          "resolved_ip": "172.67.147.248",
+          "latency_ms": 177,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:11.995Z",
+      "last_open_at": "2026-11-21T14:44:44.157Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -24027,7 +24027,7 @@
       "id": "mrwe-de",
       "name": "mrwe.de",
       "url": "https://mrwe.de",
-      "checked_at": "2026-11-20T15:34:14.023Z",
+      "checked_at": "2026-11-21T14:44:44.813Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -26859,7 +26859,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "188.165.207.225",
-        "latency_ms": 833,
+        "latency_ms": 792,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -26868,7 +26868,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "188.165.207.225",
-          "latency_ms": 672,
+          "latency_ms": 725,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -26876,7 +26876,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "188.165.207.225",
-          "latency_ms": 633,
+          "latency_ms": 496,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -26884,7 +26884,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "188.165.207.225",
-          "latency_ms": 449,
+          "latency_ms": 357,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -26892,7 +26892,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "188.165.207.225",
-          "latency_ms": 631,
+          "latency_ms": 480,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -26900,13 +26900,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "188.165.207.225",
-          "latency_ms": 833,
+          "latency_ms": 792,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:14.023Z",
+      "last_open_at": "2026-11-21T14:44:44.813Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -26920,7 +26920,7 @@
       "id": "opentranslate-devol-it",
       "name": "opentranslate.devol.it",
       "url": "https://opentranslate.devol.it",
-      "checked_at": "2026-11-20T15:34:14.916Z",
+      "checked_at": "2026-11-21T14:44:45.772Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -27187,7 +27187,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "95.216.96.220",
-        "latency_ms": 528,
+        "latency_ms": 421,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -27196,7 +27196,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "95.216.96.220",
-          "latency_ms": 714,
+          "latency_ms": 580,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -27204,7 +27204,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "95.216.96.220",
-          "latency_ms": 530,
+          "latency_ms": 424,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -27212,7 +27212,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "95.216.96.220",
-          "latency_ms": 516,
+          "latency_ms": 420,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -27220,7 +27220,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "95.216.96.220",
-          "latency_ms": 687,
+          "latency_ms": 555,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -27228,13 +27228,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "95.216.96.220",
-          "latency_ms": 528,
+          "latency_ms": 421,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:14.916Z",
+      "last_open_at": "2026-11-21T14:44:45.772Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FI",
@@ -27248,7 +27248,7 @@
       "id": "osnabrueck",
       "name": "University of Osnabrück",
       "url": "https://translate.virtuos.uni-osnabrueck.de",
-      "checked_at": "2026-11-20T15:34:17.241Z",
+      "checked_at": "2026-11-21T14:44:47.664Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -30080,7 +30080,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "131.173.19.206",
-        "latency_ms": 623,
+        "latency_ms": 413,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -30089,7 +30089,7 @@
         "health": {
           "http_status": 404,
           "resolved_ip": "131.173.19.206",
-          "latency_ms": 793,
+          "latency_ms": 940,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30097,7 +30097,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "131.173.19.206",
-          "latency_ms": 760,
+          "latency_ms": 514,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30105,7 +30105,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "131.173.19.206",
-          "latency_ms": 569,
+          "latency_ms": 408,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30113,7 +30113,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "131.173.19.206",
-          "latency_ms": 764,
+          "latency_ms": 558,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30121,13 +30121,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "131.173.19.206",
-          "latency_ms": 623,
+          "latency_ms": 413,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:17.241Z",
+      "last_open_at": "2026-11-21T14:44:47.664Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -30141,7 +30141,7 @@
       "id": "sans-nuage",
       "name": "Sans Nuage",
       "url": "https://traduire.sans-nuage.fr",
-      "checked_at": "2026-11-20T15:34:17.891Z",
+      "checked_at": "2026-11-21T14:44:48.172Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -30333,7 +30333,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "89.234.141.80",
-        "latency_ms": 565,
+        "latency_ms": 541,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -30342,7 +30342,7 @@
         "health": {
           "http_status": 404,
           "resolved_ip": "89.234.141.80",
-          "latency_ms": 1002,
+          "latency_ms": 1012,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30350,7 +30350,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "89.234.141.80",
-          "latency_ms": 704,
+          "latency_ms": 526,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30358,7 +30358,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "89.234.141.80",
-          "latency_ms": 582,
+          "latency_ms": 468,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30366,7 +30366,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "89.234.141.80",
-          "latency_ms": 729,
+          "latency_ms": 560,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -30374,13 +30374,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "89.234.141.80",
-          "latency_ms": 565,
+          "latency_ms": 541,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:17.891Z",
+      "last_open_at": "2026-11-21T14:44:48.172Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -30394,7 +30394,7 @@
       "id": "taketh-is",
       "name": "taketh.is",
       "url": "https://taketh.is",
-      "checked_at": "2026-11-20T15:34:20.752Z",
+      "checked_at": "2026-11-21T14:44:50.498Z",
       "availability": "unreachable",
       "availability_reason": "TLS certificate or handshake failure (ERR_TLS_CERT_ALTNAME_INVALID)",
       "down_check": {
@@ -30403,7 +30403,7 @@
           "health": {
             "http_status": null,
             "resolved_ip": "95.216.221.17",
-            "latency_ms": 542,
+            "latency_ms": 437,
             "error": "tls_error",
             "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
             "error_stage": "request"
@@ -30411,7 +30411,7 @@
           "languages": {
             "http_status": null,
             "resolved_ip": "95.216.221.17",
-            "latency_ms": 346,
+            "latency_ms": 284,
             "error": "tls_error",
             "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
             "error_stage": "request"
@@ -30419,7 +30419,7 @@
           "settings": {
             "http_status": null,
             "resolved_ip": "95.216.221.17",
-            "latency_ms": 343,
+            "latency_ms": 285,
             "error": "tls_error",
             "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
             "error_stage": "request"
@@ -30427,7 +30427,7 @@
           "homepage": {
             "http_status": null,
             "resolved_ip": "95.216.221.17",
-            "latency_ms": 374,
+            "latency_ms": 277,
             "error": "tls_error",
             "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
             "error_stage": "request"
@@ -30452,7 +30452,7 @@
         "health": {
           "http_status": null,
           "resolved_ip": "95.216.221.17",
-          "latency_ms": 542,
+          "latency_ms": 437,
           "error": "tls_error",
           "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
           "error_stage": "request"
@@ -30460,7 +30460,7 @@
         "languages": {
           "http_status": null,
           "resolved_ip": "95.216.221.17",
-          "latency_ms": 346,
+          "latency_ms": 284,
           "error": "tls_error",
           "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
           "error_stage": "request"
@@ -30468,7 +30468,7 @@
         "settings": {
           "http_status": null,
           "resolved_ip": "95.216.221.17",
-          "latency_ms": 343,
+          "latency_ms": 285,
           "error": "tls_error",
           "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
           "error_stage": "request"
@@ -30476,7 +30476,7 @@
         "homepage": {
           "http_status": null,
           "resolved_ip": "95.216.221.17",
-          "latency_ms": 374,
+          "latency_ms": 277,
           "error": "tls_error",
           "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
           "error_stage": "request"
@@ -30484,7 +30484,7 @@
         "translate": null
       },
       "last_open_at": null,
-      "consecutive_failures": 8,
+      "consecutive_failures": 9,
       "country": {
         "code": "FI",
         "name": "Finland",
@@ -30497,7 +30497,7 @@
       "id": "tr-asturias-red",
       "name": "tr.asturias.red",
       "url": "https://tr.asturias.red",
-      "checked_at": "2026-11-20T15:34:21.474Z",
+      "checked_at": "2026-11-21T14:44:51.280Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -33329,7 +33329,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "188.171.246.122",
-        "latency_ms": 890,
+        "latency_ms": 834,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -33338,7 +33338,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "188.171.246.122",
-          "latency_ms": 518,
+          "latency_ms": 458,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33346,7 +33346,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "188.171.246.122",
-          "latency_ms": 634,
+          "latency_ms": 644,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33354,7 +33354,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "188.171.246.122",
-          "latency_ms": 483,
+          "latency_ms": 372,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33362,7 +33362,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "188.171.246.122",
-          "latency_ms": 632,
+          "latency_ms": 547,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33370,13 +33370,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "188.171.246.122",
-          "latency_ms": 890,
+          "latency_ms": 834,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:21.474Z",
+      "last_open_at": "2026-11-21T14:44:51.280Z",
       "consecutive_failures": 0,
       "country": {
         "code": "ES",
@@ -33390,7 +33390,7 @@
       "id": "tr-doufei-eu-org",
       "name": "tr.doufei.eu.org",
       "url": "https://tr.doufei.eu.org",
-      "checked_at": "2026-11-20T15:34:22.357Z",
+      "checked_at": "2026-11-21T14:44:51.781Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -33428,7 +33428,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "147.224.244.198",
-        "latency_ms": 421,
+        "latency_ms": 453,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -33437,7 +33437,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "147.224.244.198",
-          "latency_ms": 292,
+          "latency_ms": 532,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33445,7 +33445,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "147.224.244.198",
-          "latency_ms": 128,
+          "latency_ms": 169,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33453,7 +33453,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "147.224.244.198",
-          "latency_ms": 125,
+          "latency_ms": 167,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33461,7 +33461,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "147.224.244.198",
-          "latency_ms": 192,
+          "latency_ms": 540,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -33469,13 +33469,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "147.224.244.198",
-          "latency_ms": 421,
+          "latency_ms": 453,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:22.357Z",
+      "last_open_at": "2026-11-21T14:44:51.781Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -33489,7 +33489,7 @@
       "id": "tr-uomainfra-fi",
       "name": "tr.uomainfra.fi",
       "url": "https://tr.uomainfra.fi",
-      "checked_at": "2026-11-20T15:34:23.515Z",
+      "checked_at": "2026-11-21T14:44:53.642Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -33996,7 +33996,7 @@
         "skipped": null,
         "http_status": 429,
         "resolved_ip": "46.62.242.206",
-        "latency_ms": 539,
+        "latency_ms": 790,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -34005,7 +34005,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "46.62.242.206",
-          "latency_ms": 608,
+          "latency_ms": 491,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -34013,7 +34013,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "46.62.242.206",
-          "latency_ms": 541,
+          "latency_ms": 458,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -34021,7 +34021,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "46.62.242.206",
-          "latency_ms": 559,
+          "latency_ms": 465,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -34029,7 +34029,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "46.62.242.206",
-          "latency_ms": 679,
+          "latency_ms": 592,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -34037,7 +34037,7 @@
         "translate": {
           "http_status": 429,
           "resolved_ip": "46.62.242.206",
-          "latency_ms": 539,
+          "latency_ms": 790,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -34057,7 +34057,7 @@
       "id": "traduzioni-serviziliberi-it",
       "name": "traduzioni.serviziliberi.it",
       "url": "https://traduzioni.serviziliberi.it",
-      "checked_at": "2026-11-20T15:34:24.631Z",
+      "checked_at": "2026-11-21T14:44:54.135Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -36186,7 +36186,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "185.229.239.47",
-        "latency_ms": 939,
+        "latency_ms": 1220,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -36195,7 +36195,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "185.229.239.47",
-          "latency_ms": 820,
+          "latency_ms": 1027,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36203,7 +36203,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "185.229.239.47",
-          "latency_ms": 532,
+          "latency_ms": 818,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36211,7 +36211,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "185.229.239.47",
-          "latency_ms": 470,
+          "latency_ms": 493,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36219,7 +36219,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "185.229.239.47",
-          "latency_ms": 604,
+          "latency_ms": 865,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36227,13 +36227,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "185.229.239.47",
-          "latency_ms": 939,
+          "latency_ms": 1220,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:24.631Z",
+      "last_open_at": "2026-11-21T14:44:54.135Z",
       "consecutive_failures": 0,
       "country": {
         "code": "IT",
@@ -36247,7 +36247,7 @@
       "id": "translate-3speak-tv",
       "name": "translate.3speak.tv",
       "url": "https://translate.3speak.tv",
-      "checked_at": "2026-11-20T15:34:26.442Z",
+      "checked_at": "2026-11-21T14:44:56.439Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -36789,7 +36789,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "15.204.229.29",
-        "latency_ms": 261,
+        "latency_ms": 171,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -36798,7 +36798,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "15.204.229.29",
-          "latency_ms": 223,
+          "latency_ms": 113,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36806,7 +36806,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "15.204.229.29",
-          "latency_ms": 253,
+          "latency_ms": 132,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36814,7 +36814,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "15.204.229.29",
-          "latency_ms": 209,
+          "latency_ms": 104,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36822,7 +36822,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "15.204.229.29",
-          "latency_ms": 262,
+          "latency_ms": 104,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -36830,13 +36830,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "15.204.229.29",
-          "latency_ms": 261,
+          "latency_ms": 171,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:26.442Z",
+      "last_open_at": "2026-11-21T14:44:56.439Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -36850,7 +36850,7 @@
       "id": "translate-blackwallgate-ipv64-net",
       "name": "translate.blackwallgate.ipv64.net",
       "url": "https://translate.blackwallgate.ipv64.net",
-      "checked_at": "2026-11-20T15:34:27.650Z",
+      "checked_at": "2026-11-21T14:44:57.063Z",
       "availability": "unreachable",
       "availability_reason": "IPv6 route unavailable from this checker",
       "down_check": {
@@ -36859,7 +36859,7 @@
           "health": {
             "http_status": null,
             "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-            "latency_ms": 222,
+            "latency_ms": 195,
             "error": "connection_error",
             "error_code": "ENETUNREACH",
             "error_stage": "request"
@@ -36867,7 +36867,7 @@
           "languages": {
             "http_status": null,
             "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-            "latency_ms": 1,
+            "latency_ms": 242,
             "error": "connection_error",
             "error_code": "ENETUNREACH",
             "error_stage": "request"
@@ -36875,7 +36875,7 @@
           "settings": {
             "http_status": null,
             "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-            "latency_ms": 1,
+            "latency_ms": 167,
             "error": "connection_error",
             "error_code": "ENETUNREACH",
             "error_stage": "request"
@@ -36883,7 +36883,7 @@
           "homepage": {
             "http_status": null,
             "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-            "latency_ms": 1,
+            "latency_ms": 2,
             "error": "connection_error",
             "error_code": "ENETUNREACH",
             "error_stage": "request"
@@ -36908,7 +36908,7 @@
         "health": {
           "http_status": null,
           "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-          "latency_ms": 222,
+          "latency_ms": 195,
           "error": "connection_error",
           "error_code": "ENETUNREACH",
           "error_stage": "request"
@@ -36916,7 +36916,7 @@
         "languages": {
           "http_status": null,
           "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-          "latency_ms": 1,
+          "latency_ms": 242,
           "error": "connection_error",
           "error_code": "ENETUNREACH",
           "error_stage": "request"
@@ -36924,7 +36924,7 @@
         "settings": {
           "http_status": null,
           "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-          "latency_ms": 1,
+          "latency_ms": 167,
           "error": "connection_error",
           "error_code": "ENETUNREACH",
           "error_stage": "request"
@@ -36932,7 +36932,7 @@
         "homepage": {
           "http_status": null,
           "resolved_ip": "2a03:b580:ab79:2001:be24:11ff:fe43:a4da",
-          "latency_ms": 1,
+          "latency_ms": 2,
           "error": "connection_error",
           "error_code": "ENETUNREACH",
           "error_stage": "request"
@@ -36940,7 +36940,7 @@
         "translate": null
       },
       "last_open_at": "2026-11-16T12:14:44.959Z",
-      "consecutive_failures": 6,
+      "consecutive_failures": 7,
       "country": {
         "code": "DE",
         "name": "Germany",
@@ -36953,7 +36953,7 @@
       "id": "translate-blueva-net",
       "name": "translate.blueva.net",
       "url": "https://translate.blueva.net",
-      "checked_at": "2026-11-20T15:34:27.875Z",
+      "checked_at": "2026-11-21T14:44:57.670Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -39679,8 +39679,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "104.21.35.36",
-        "latency_ms": 846,
+        "resolved_ip": "172.67.212.241",
+        "latency_ms": 775,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -39688,8 +39688,8 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "172.67.212.241",
-          "latency_ms": 721,
+          "resolved_ip": "104.21.35.36",
+          "latency_ms": 549,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -39697,7 +39697,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "172.67.212.241",
-          "latency_ms": 602,
+          "latency_ms": 521,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -39705,7 +39705,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "172.67.212.241",
-          "latency_ms": 262,
+          "latency_ms": 202,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -39713,21 +39713,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "104.21.35.36",
-          "latency_ms": 289,
+          "latency_ms": 238,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "104.21.35.36",
-          "latency_ms": 846,
+          "resolved_ip": "172.67.212.241",
+          "latency_ms": 775,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:27.875Z",
+      "last_open_at": "2026-11-21T14:44:57.670Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -39735,7 +39735,7 @@
       "id": "translate-brothertec-eu",
       "name": "translate.brothertec.eu",
       "url": "https://translate.brothertec.eu",
-      "checked_at": "2026-11-20T15:34:27.997Z",
+      "checked_at": "2026-11-21T14:44:58.559Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -42567,7 +42567,7 @@
         "skipped": null,
         "http_status": 400,
         "resolved_ip": "157.90.177.171",
-        "latency_ms": 510,
+        "latency_ms": 389,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -42576,7 +42576,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "157.90.177.171",
-          "latency_ms": 720,
+          "latency_ms": 530,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42584,7 +42584,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "157.90.177.171",
-          "latency_ms": 678,
+          "latency_ms": 482,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42592,7 +42592,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "157.90.177.171",
-          "latency_ms": 507,
+          "latency_ms": 363,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42600,7 +42600,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "157.90.177.171",
-          "latency_ms": 684,
+          "latency_ms": 522,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42608,7 +42608,7 @@
         "translate": {
           "http_status": 400,
           "resolved_ip": "157.90.177.171",
-          "latency_ms": 510,
+          "latency_ms": 389,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42628,7 +42628,7 @@
       "id": "translate-cls-ru-nl",
       "name": "translate.cls.ru.nl",
       "url": "https://translate.cls.ru.nl",
-      "checked_at": "2026-11-20T15:34:30.596Z",
+      "checked_at": "2026-11-21T14:44:59.955Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -42876,7 +42876,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "131.174.114.240",
-        "latency_ms": 463,
+        "latency_ms": 571,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -42885,7 +42885,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "131.174.114.240",
-          "latency_ms": 958,
+          "latency_ms": 1276,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42893,7 +42893,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "131.174.114.240",
-          "latency_ms": 462,
+          "latency_ms": 879,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42901,7 +42901,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "131.174.114.240",
-          "latency_ms": 464,
+          "latency_ms": 354,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42909,7 +42909,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "131.174.114.240",
-          "latency_ms": 611,
+          "latency_ms": 813,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42917,13 +42917,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "131.174.114.240",
-          "latency_ms": 463,
+          "latency_ms": 571,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:30.596Z",
+      "last_open_at": "2026-11-21T14:44:59.955Z",
       "consecutive_failures": 0,
       "country": {
         "code": "NL",
@@ -42937,7 +42937,7 @@
       "id": "translate-cornelcaba-com",
       "name": "translate.cornelcaba.com",
       "url": "https://translate.cornelcaba.com",
-      "checked_at": "2026-11-20T15:34:31.097Z",
+      "checked_at": "2026-11-21T14:45:00.847Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -42975,7 +42975,7 @@
         "skipped": null,
         "http_status": 400,
         "resolved_ip": "167.233.229.218",
-        "latency_ms": 672,
+        "latency_ms": 531,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -42984,7 +42984,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "167.233.229.218",
-          "latency_ms": 661,
+          "latency_ms": 571,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -42992,7 +42992,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "167.233.229.218",
-          "latency_ms": 581,
+          "latency_ms": 526,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -43000,7 +43000,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "167.233.229.218",
-          "latency_ms": 598,
+          "latency_ms": 524,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -43008,7 +43008,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "167.233.229.218",
-          "latency_ms": 699,
+          "latency_ms": 652,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -43016,7 +43016,7 @@
         "translate": {
           "http_status": 400,
           "resolved_ip": "167.233.229.218",
-          "latency_ms": 672,
+          "latency_ms": 531,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -43036,7 +43036,7 @@
       "id": "translate-daddelwerk-net",
       "name": "translate.daddelwerk.net",
       "url": "https://translate.daddelwerk.net",
-      "checked_at": "2026-11-20T15:34:33.556Z",
+      "checked_at": "2026-11-21T14:45:03.652Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -45868,7 +45868,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "87.106.235.127",
-        "latency_ms": 754,
+        "latency_ms": 594,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -45877,7 +45877,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "87.106.235.127",
-          "latency_ms": 696,
+          "latency_ms": 426,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -45885,7 +45885,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "87.106.235.127",
-          "latency_ms": 753,
+          "latency_ms": 506,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -45893,7 +45893,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "87.106.235.127",
-          "latency_ms": 554,
+          "latency_ms": 390,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -45901,7 +45901,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "87.106.235.127",
-          "latency_ms": 729,
+          "latency_ms": 476,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -45909,13 +45909,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "87.106.235.127",
-          "latency_ms": 754,
+          "latency_ms": 594,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:33.556Z",
+      "last_open_at": "2026-11-21T14:45:03.652Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -45929,7 +45929,7 @@
       "id": "translate-dinosite-net",
       "name": "translate.dinosite.net",
       "url": "https://translate.dinosite.net",
-      "checked_at": "2026-11-20T15:34:34.307Z",
+      "checked_at": "2026-11-21T14:45:03.849Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -48474,7 +48474,7 @@
         },
         {
           "code": "uk",
-          "name": "Ukrainian",
+          "name": "Ukranian",
           "targets": [
             "ar",
             "az",
@@ -48761,7 +48761,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "129.213.28.98",
-        "latency_ms": 386,
+        "latency_ms": 229,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -48770,7 +48770,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "129.146.24.47",
-          "latency_ms": 443,
+          "latency_ms": 355,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -48778,23 +48778,23 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "129.146.24.47",
-          "latency_ms": 328,
+          "latency_ms": 383,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "129.213.28.98",
-          "latency_ms": 282,
+          "resolved_ip": "129.146.24.47",
+          "latency_ms": 275,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "129.213.28.98",
-          "latency_ms": 392,
+          "resolved_ip": "129.146.24.47",
+          "latency_ms": 391,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -48802,13 +48802,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "129.213.28.98",
-          "latency_ms": 386,
+          "latency_ms": 229,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:34.307Z",
+      "last_open_at": "2026-11-21T14:45:03.849Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -48822,7 +48822,7 @@
       "id": "translate-direitosdigitais-pt",
       "name": "translate.direitosdigitais.pt",
       "url": "https://translate.direitosdigitais.pt",
-      "checked_at": "2026-11-20T15:34:36.139Z",
+      "checked_at": "2026-11-21T14:45:05.482Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -50829,7 +50829,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "65.108.208.33",
-        "latency_ms": 872,
+        "latency_ms": 1203,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -50838,7 +50838,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "65.108.208.33",
-          "latency_ms": 715,
+          "latency_ms": 746,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -50846,7 +50846,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "65.108.208.33",
-          "latency_ms": 529,
+          "latency_ms": 557,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -50854,7 +50854,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "65.108.208.33",
-          "latency_ms": 518,
+          "latency_ms": 439,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -50862,7 +50862,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "65.108.208.33",
-          "latency_ms": 688,
+          "latency_ms": 881,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -50870,13 +50870,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "65.108.208.33",
-          "latency_ms": 872,
+          "latency_ms": 1203,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:36.139Z",
+      "last_open_at": "2026-11-21T14:45:05.482Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FI",
@@ -50890,7 +50890,7 @@
       "id": "translate-ecotec-gp",
       "name": "translate.ecotec.gp",
       "url": "https://translate.ecotec.gp",
-      "checked_at": "2026-11-20T15:34:37.043Z",
+      "checked_at": "2026-11-21T14:45:06.046Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -53722,7 +53722,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "91.99.137.1",
-        "latency_ms": 697,
+        "latency_ms": 571,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -53731,7 +53731,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "91.99.137.1",
-          "latency_ms": 809,
+          "latency_ms": 631,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -53739,7 +53739,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "91.99.137.1",
-          "latency_ms": 575,
+          "latency_ms": 412,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -53747,7 +53747,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "91.99.137.1",
-          "latency_ms": 525,
+          "latency_ms": 370,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -53755,7 +53755,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "91.99.137.1",
-          "latency_ms": 688,
+          "latency_ms": 499,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -53763,13 +53763,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "91.99.137.1",
-          "latency_ms": 697,
+          "latency_ms": 571,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:37.043Z",
+      "last_open_at": "2026-11-21T14:45:06.046Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -53783,7 +53783,7 @@
       "id": "translate-envs-net",
       "name": "translate.envs.net",
       "url": "https://translate.envs.net",
-      "checked_at": "2026-11-20T15:34:39.462Z",
+      "checked_at": "2026-11-21T14:45:08.531Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -56615,7 +56615,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "157.180.15.214",
-        "latency_ms": 936,
+        "latency_ms": 635,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -56624,7 +56624,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "157.180.15.214",
-          "latency_ms": 1174,
+          "latency_ms": 579,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -56632,7 +56632,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "157.180.15.214",
-          "latency_ms": 679,
+          "latency_ms": 564,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -56640,7 +56640,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "157.180.15.214",
-          "latency_ms": 515,
+          "latency_ms": 429,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -56648,7 +56648,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "157.180.15.214",
-          "latency_ms": 686,
+          "latency_ms": 594,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -56656,13 +56656,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "157.180.15.214",
-          "latency_ms": 936,
+          "latency_ms": 635,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:39.462Z",
+      "last_open_at": "2026-11-21T14:45:08.531Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FI",
@@ -56676,7 +56676,7 @@
       "id": "translate-filewave-com",
       "name": "translate.filewave.com",
       "url": "https://translate.filewave.com",
-      "checked_at": "2026-11-20T15:34:40.338Z",
+      "checked_at": "2026-11-21T14:45:09.310Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -59508,7 +59508,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "35.169.56.158",
-        "latency_ms": 174,
+        "latency_ms": 118,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -59517,7 +59517,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "35.169.56.158",
-          "latency_ms": 210,
+          "latency_ms": 121,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -59525,7 +59525,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "35.169.56.158",
-          "latency_ms": 231,
+          "latency_ms": 150,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -59533,7 +59533,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "35.169.56.158",
-          "latency_ms": 177,
+          "latency_ms": 125,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -59541,7 +59541,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "35.169.56.158",
-          "latency_ms": 229,
+          "latency_ms": 126,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -59549,13 +59549,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "35.169.56.158",
-          "latency_ms": 174,
+          "latency_ms": 118,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:40.338Z",
+      "last_open_at": "2026-11-21T14:45:09.310Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -59569,7 +59569,7 @@
       "id": "translate-geobon-org",
       "name": "translate.geobon.org",
       "url": "https://translate.geobon.org",
-      "checked_at": "2026-11-20T15:34:41.360Z",
+      "checked_at": "2026-11-21T14:45:09.951Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -62391,7 +62391,7 @@
         "skipped": null,
         "http_status": 400,
         "resolved_ip": "139.177.198.20",
-        "latency_ms": 204,
+        "latency_ms": 248,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -62400,7 +62400,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "139.177.198.20",
-          "latency_ms": 219,
+          "latency_ms": 168,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62408,7 +62408,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "139.177.198.20",
-          "latency_ms": 242,
+          "latency_ms": 145,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62416,7 +62416,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "139.177.198.20",
-          "latency_ms": 208,
+          "latency_ms": 127,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62424,7 +62424,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "139.177.198.20",
-          "latency_ms": 234,
+          "latency_ms": 136,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62432,7 +62432,7 @@
         "translate": {
           "http_status": 400,
           "resolved_ip": "139.177.198.20",
-          "latency_ms": 204,
+          "latency_ms": 248,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62452,11 +62452,11 @@
       "id": "translate-hagocloud-com",
       "name": "translate.hagocloud.com",
       "url": "https://translate.hagocloud.com",
-      "checked_at": "2026-11-20T15:34:42.468Z",
-      "availability": "online",
-      "availability_reason": null,
+      "checked_at": "2026-11-21T14:45:10.775Z",
+      "availability": "degraded",
+      "availability_reason": "HTTP responded; API check incomplete",
       "down_check": null,
-      "api_access": "open",
+      "api_access": "unverified",
       "version": "1.9.5",
       "offline_since": null,
       "reported_key_required": false,
@@ -62473,98 +62473,33 @@
         ".txt"
       ],
       "character_limit": -1,
-      "language_count": 5,
-      "languages": [
-        {
-          "code": "de",
-          "name": "German",
-          "targets": [
-            "de",
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ]
-        },
-        {
-          "code": "en",
-          "name": "English",
-          "targets": [
-            "de",
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ]
-        },
-        {
-          "code": "es",
-          "name": "Spanish",
-          "targets": [
-            "de",
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ]
-        },
-        {
-          "code": "fr",
-          "name": "French",
-          "targets": [
-            "de",
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ]
-        },
-        {
-          "code": "ja",
-          "name": "Japanese",
-          "targets": [
-            "de",
-            "en",
-            "es",
-            "fr",
-            "ja"
-          ]
-        }
-      ],
+      "language_count": 0,
+      "languages": [],
       "translation_probe": {
-        "pair": {
-          "source": "en",
-          "target": "es"
-        },
-        "skipped": null,
-        "http_status": 200,
-        "resolved_ip": "109.199.107.174",
-        "latency_ms": 1211,
-        "error": null,
-        "error_code": null,
-        "error_stage": null
+        "pair": null,
+        "skipped": "no_supported_language_pair"
       },
       "endpoints": {
         "health": {
           "http_status": 200,
           "resolved_ip": "109.199.107.174",
-          "latency_ms": 628,
+          "latency_ms": 390,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
-          "http_status": 200,
+          "http_status": null,
           "resolved_ip": "109.199.107.174",
-          "latency_ms": 563,
-          "error": null,
-          "error_code": null,
-          "error_stage": null
+          "latency_ms": 286,
+          "error": "connection_error",
+          "error_code": "ECONNRESET",
+          "error_stage": "request"
         },
         "settings": {
           "http_status": 200,
           "resolved_ip": "109.199.107.174",
-          "latency_ms": 531,
+          "latency_ms": 504,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62572,22 +62507,15 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "109.199.107.174",
-          "latency_ms": 716,
+          "latency_ms": 636,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
-        "translate": {
-          "http_status": 200,
-          "resolved_ip": "109.199.107.174",
-          "latency_ms": 1211,
-          "error": null,
-          "error_code": null,
-          "error_stage": null
-        }
+        "translate": null
       },
       "last_open_at": "2026-11-20T15:34:42.468Z",
-      "consecutive_failures": 0,
+      "consecutive_failures": 1,
       "country": {
         "code": "FR",
         "name": "France",
@@ -62600,7 +62528,7 @@
       "id": "translate-ignifi-eu",
       "name": "translate.ignifi.eu",
       "url": "https://translate.ignifi.eu",
-      "checked_at": "2026-11-20T15:34:43.453Z",
+      "checked_at": "2026-11-21T14:45:11.333Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -62704,7 +62632,7 @@
         "skipped": null,
         "http_status": 400,
         "resolved_ip": "95.216.172.115",
-        "latency_ms": 685,
+        "latency_ms": 745,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -62713,7 +62641,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "95.216.172.115",
-          "latency_ms": 758,
+          "latency_ms": 595,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62721,7 +62649,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "95.216.172.115",
-          "latency_ms": 735,
+          "latency_ms": 614,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62729,7 +62657,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "95.216.172.115",
-          "latency_ms": 683,
+          "latency_ms": 612,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62737,7 +62665,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "95.216.172.115",
-          "latency_ms": 921,
+          "latency_ms": 758,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62745,7 +62673,7 @@
         "translate": {
           "http_status": 400,
           "resolved_ip": "95.216.172.115",
-          "latency_ms": 685,
+          "latency_ms": 745,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -62765,7 +62693,7 @@
       "id": "translate-ilabhub-atc-gr",
       "name": "translate.ilabhub.atc.gr",
       "url": "https://translate.ilabhub.atc.gr",
-      "checked_at": "2026-11-20T15:34:46.116Z",
+      "checked_at": "2026-11-21T14:45:12.591Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -65389,7 +65317,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "95.217.172.14",
-        "latency_ms": 690,
+        "latency_ms": 849,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -65398,7 +65326,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "95.217.172.14",
-          "latency_ms": 754,
+          "latency_ms": 717,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -65406,7 +65334,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "95.217.172.14",
-          "latency_ms": 692,
+          "latency_ms": 607,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -65414,7 +65342,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "95.217.172.14",
-          "latency_ms": 682,
+          "latency_ms": 764,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -65422,7 +65350,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "95.217.172.14",
-          "latency_ms": 850,
+          "latency_ms": 841,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -65430,13 +65358,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "95.217.172.14",
-          "latency_ms": 690,
+          "latency_ms": 849,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:46.116Z",
+      "last_open_at": "2026-11-21T14:45:12.591Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FI",
@@ -65450,7 +65378,7 @@
       "id": "translate-libregalaxy-org",
       "name": "translate.libregalaxy.org",
       "url": "https://translate.libregalaxy.org",
-      "checked_at": "2026-11-20T15:34:47.236Z",
+      "checked_at": "2026-11-21T14:45:14.657Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -68282,7 +68210,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "54.39.107.181",
-        "latency_ms": 1025,
+        "latency_ms": 1132,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -68291,7 +68219,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "54.39.107.181",
-          "latency_ms": 338,
+          "latency_ms": 219,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68299,7 +68227,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "54.39.107.181",
-          "latency_ms": 358,
+          "latency_ms": 337,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68307,7 +68235,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "54.39.107.181",
-          "latency_ms": 257,
+          "latency_ms": 148,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68315,7 +68243,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "54.39.107.181",
-          "latency_ms": 344,
+          "latency_ms": 356,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68323,13 +68251,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "54.39.107.181",
-          "latency_ms": 1025,
+          "latency_ms": 1132,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:47.236Z",
+      "last_open_at": "2026-11-21T14:45:14.657Z",
       "consecutive_failures": 0,
       "country": {
         "code": "CA",
@@ -68343,7 +68271,7 @@
       "id": "translate-libresoftware-cloud",
       "name": "translate.libresoftware.cloud",
       "url": "https://translate.libresoftware.cloud",
-      "checked_at": "2026-11-20T15:34:49.559Z",
+      "checked_at": "2026-11-21T14:45:16.370Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -68405,7 +68333,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "141.95.170.164",
-        "latency_ms": 1094,
+        "latency_ms": 847,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -68414,7 +68342,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "141.95.170.164",
-          "latency_ms": 1123,
+          "latency_ms": 705,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68422,7 +68350,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "141.95.170.164",
-          "latency_ms": 471,
+          "latency_ms": 757,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68430,7 +68358,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "141.95.170.164",
-          "latency_ms": 489,
+          "latency_ms": 445,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68438,7 +68366,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "141.95.170.164",
-          "latency_ms": 1005,
+          "latency_ms": 556,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -68446,13 +68374,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "141.95.170.164",
-          "latency_ms": 1094,
+          "latency_ms": 847,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:49.559Z",
+      "last_open_at": "2026-11-21T14:45:16.370Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -68466,7 +68394,7 @@
       "id": "translate-mandello-com-br",
       "name": "translate.mandello.com.br",
       "url": "https://translate.mandello.com.br",
-      "checked_at": "2026-11-20T15:34:49.785Z",
+      "checked_at": "2026-11-21T14:45:16.850Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -71193,7 +71121,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "172.67.136.218",
-        "latency_ms": 370,
+        "latency_ms": 451,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -71201,16 +71129,16 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "172.67.136.218",
-          "latency_ms": 427,
+          "resolved_ip": "104.21.94.142",
+          "latency_ms": 342,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "172.67.136.218",
-          "latency_ms": 249,
+          "resolved_ip": "104.21.94.142",
+          "latency_ms": 189,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71218,15 +71146,15 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "104.21.94.142",
-          "latency_ms": 128,
+          "latency_ms": 104,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "172.67.136.218",
-          "latency_ms": 150,
+          "resolved_ip": "104.21.94.142",
+          "latency_ms": 105,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71234,13 +71162,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "172.67.136.218",
-          "latency_ms": 370,
+          "latency_ms": 451,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:49.785Z",
+      "last_open_at": "2026-11-21T14:45:16.850Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -71248,7 +71176,7 @@
       "id": "translate-multed-com",
       "name": "translate.multed.com",
       "url": "https://translate.multed.com",
-      "checked_at": "2026-11-20T15:34:51.110Z",
+      "checked_at": "2026-11-21T14:45:18.042Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -71334,8 +71262,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "185.82.197.140",
-        "latency_ms": 922,
+        "resolved_ip": "185.195.236.139",
+        "latency_ms": 1035,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -71343,60 +71271,60 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "185.82.197.140",
-          "latency_ms": 844,
+          "resolved_ip": "185.195.236.139",
+          "latency_ms": 510,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "185.82.197.140",
-          "latency_ms": 764,
+          "resolved_ip": "185.195.236.139",
+          "latency_ms": 453,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "185.82.197.140",
-          "latency_ms": 750,
+          "resolved_ip": "185.195.236.139",
+          "latency_ms": 496,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "185.82.197.140",
-          "latency_ms": 1057,
+          "resolved_ip": "185.195.236.139",
+          "latency_ms": 624,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "185.82.197.140",
-          "latency_ms": 922,
+          "resolved_ip": "185.195.236.139",
+          "latency_ms": 1035,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:51.110Z",
+      "last_open_at": "2026-11-21T14:45:18.042Z",
       "consecutive_failures": 0,
       "country": {
-        "code": "RU",
-        "name": "Russia",
-        "ip": "185.82.197.140",
+        "code": "SE",
+        "name": "Sweden",
+        "ip": "185.195.236.139",
         "source": "https://country.is",
-        "checked_at": "2026-11-16T12:27:39.801Z"
+        "checked_at": "2026-11-21T14:45:34.467Z"
       }
     },
     {
       "id": "translate-myvoicecountscharitiesfoundation-org",
       "name": "translate.myvoicecountscharitiesfoundation.org",
       "url": "https://translate.myvoicecountscharitiesfoundation.org",
-      "checked_at": "2026-11-20T15:34:53.741Z",
+      "checked_at": "2026-11-21T14:45:19.680Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -71468,7 +71396,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "72.60.121.52",
-        "latency_ms": 270,
+        "latency_ms": 127,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -71477,7 +71405,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "72.60.121.52",
-          "latency_ms": 305,
+          "latency_ms": 212,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71485,7 +71413,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "72.60.121.52",
-          "latency_ms": 262,
+          "latency_ms": 241,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71493,7 +71421,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "72.60.121.52",
-          "latency_ms": 309,
+          "latency_ms": 164,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71501,7 +71429,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "72.60.121.52",
-          "latency_ms": 590,
+          "latency_ms": 373,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -71509,13 +71437,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "72.60.121.52",
-          "latency_ms": 270,
+          "latency_ms": 127,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:53.741Z",
+      "last_open_at": "2026-11-21T14:45:19.680Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
@@ -71529,7 +71457,7 @@
       "id": "translate-ondocker-cynapsis-de",
       "name": "translate.ondocker.cynapsis.de",
       "url": "https://translate.ondocker.cynapsis.de",
-      "checked_at": "2026-11-20T15:34:55.447Z",
+      "checked_at": "2026-11-21T14:45:20.798Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -74361,7 +74289,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "94.199.212.36",
-        "latency_ms": 947,
+        "latency_ms": 754,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -74370,7 +74298,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "94.199.212.36",
-          "latency_ms": 611,
+          "latency_ms": 515,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -74378,7 +74306,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "94.199.212.36",
-          "latency_ms": 678,
+          "latency_ms": 558,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -74386,7 +74314,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "94.199.212.36",
-          "latency_ms": 512,
+          "latency_ms": 509,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -74394,7 +74322,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "94.199.212.36",
-          "latency_ms": 682,
+          "latency_ms": 536,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -74402,13 +74330,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "94.199.212.36",
-          "latency_ms": 947,
+          "latency_ms": 754,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:55.447Z",
+      "last_open_at": "2026-11-21T14:45:20.798Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -74422,7 +74350,7 @@
       "id": "translate-orangc-net",
       "name": "translate.orangc.net",
       "url": "https://translate.orangc.net",
-      "checked_at": "2026-11-20T15:34:55.477Z",
+      "checked_at": "2026-11-21T14:45:21.161Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -77254,7 +77182,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "172.67.147.237",
-        "latency_ms": 324,
+        "latency_ms": 288,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -77263,7 +77191,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "172.67.147.237",
-          "latency_ms": 742,
+          "latency_ms": 531,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -77271,23 +77199,23 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "104.21.28.250",
-          "latency_ms": 718,
+          "latency_ms": 241,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "104.21.28.250",
-          "latency_ms": 325,
+          "resolved_ip": "172.67.147.237",
+          "latency_ms": 239,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "homepage": {
           "http_status": 200,
-          "resolved_ip": "172.67.147.237",
-          "latency_ms": 313,
+          "resolved_ip": "104.21.28.250",
+          "latency_ms": 618,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -77295,13 +77223,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "172.67.147.237",
-          "latency_ms": 324,
+          "latency_ms": 288,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:55.477Z",
+      "last_open_at": "2026-11-21T14:45:21.161Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -77309,7 +77237,7 @@
       "id": "translate-peculiar-florist",
       "name": "translate.peculiar.florist",
       "url": "https://translate.peculiar.florist",
-      "checked_at": "2026-11-20T15:34:57.053Z",
+      "checked_at": "2026-11-21T14:45:23.078Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -80141,7 +80069,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "176.31.27.170",
-        "latency_ms": 822,
+        "latency_ms": 788,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -80150,7 +80078,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "176.31.27.170",
-          "latency_ms": 608,
+          "latency_ms": 876,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80158,7 +80086,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "176.31.27.170",
-          "latency_ms": 621,
+          "latency_ms": 449,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80166,7 +80094,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "176.31.27.170",
-          "latency_ms": 462,
+          "latency_ms": 346,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80174,7 +80102,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "176.31.27.170",
-          "latency_ms": 669,
+          "latency_ms": 459,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80182,13 +80110,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "176.31.27.170",
-          "latency_ms": 822,
+          "latency_ms": 788,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:57.053Z",
+      "last_open_at": "2026-11-21T14:45:23.078Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -80202,7 +80130,7 @@
       "id": "translate-retzo-net",
       "name": "translate.retzo.net",
       "url": "https://translate.retzo.net",
-      "checked_at": "2026-11-20T15:34:57.900Z",
+      "checked_at": "2026-11-21T14:45:23.671Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -80250,7 +80178,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "116.203.155.119",
-        "latency_ms": 1156,
+        "latency_ms": 897,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -80259,7 +80187,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "116.203.155.119",
-          "latency_ms": 882,
+          "latency_ms": 511,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80267,7 +80195,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "116.203.155.119",
-          "latency_ms": 557,
+          "latency_ms": 372,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80275,7 +80203,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "116.203.155.119",
-          "latency_ms": 527,
+          "latency_ms": 394,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80283,7 +80211,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "116.203.155.119",
-          "latency_ms": 695,
+          "latency_ms": 509,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80291,13 +80219,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "116.203.155.119",
-          "latency_ms": 1156,
+          "latency_ms": 897,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:57.900Z",
+      "last_open_at": "2026-11-21T14:45:23.671Z",
       "consecutive_failures": 0,
       "country": {
         "code": "DE",
@@ -80311,7 +80239,7 @@
       "id": "translate-sendbazar-net",
       "name": "translate.sendbazar.net",
       "url": "https://translate.sendbazar.net",
-      "checked_at": "2026-11-20T15:34:58.878Z",
+      "checked_at": "2026-11-21T14:45:25.997Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -80383,7 +80311,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "82.25.118.169",
-        "latency_ms": 565,
+        "latency_ms": 573,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -80392,7 +80320,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "82.25.118.169",
-          "latency_ms": 614,
+          "latency_ms": 420,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80400,7 +80328,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "82.25.118.169",
-          "latency_ms": 524,
+          "latency_ms": 395,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80408,7 +80336,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "82.25.118.169",
-          "latency_ms": 501,
+          "latency_ms": 349,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80416,7 +80344,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "82.25.118.169",
-          "latency_ms": 685,
+          "latency_ms": 543,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -80424,13 +80352,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "82.25.118.169",
-          "latency_ms": 565,
+          "latency_ms": 573,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:34:58.878Z",
+      "last_open_at": "2026-11-21T14:45:25.997Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -80444,7 +80372,7 @@
       "id": "translate-splidex-com",
       "name": "translate.splidex.com",
       "url": "https://translate.splidex.com",
-      "checked_at": "2026-11-20T15:35:00.236Z",
+      "checked_at": "2026-11-21T14:45:26.355Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -83275,8 +83203,8 @@
         },
         "skipped": null,
         "http_status": 200,
-        "resolved_ip": "104.21.31.124",
-        "latency_ms": 246,
+        "resolved_ip": "172.67.176.131",
+        "latency_ms": 208,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -83284,24 +83212,24 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "104.21.31.124",
-          "latency_ms": 521,
+          "resolved_ip": "172.67.176.131",
+          "latency_ms": 549,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "languages": {
           "http_status": 200,
-          "resolved_ip": "172.67.176.131",
-          "latency_ms": 274,
+          "resolved_ip": "104.21.31.124",
+          "latency_ms": 377,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "172.67.176.131",
-          "latency_ms": 339,
+          "resolved_ip": "104.21.31.124",
+          "latency_ms": 182,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -83309,21 +83237,21 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "104.21.31.124",
-          "latency_ms": 244,
+          "latency_ms": 363,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "translate": {
           "http_status": 200,
-          "resolved_ip": "104.21.31.124",
-          "latency_ms": 246,
+          "resolved_ip": "172.67.176.131",
+          "latency_ms": 208,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:35:00.236Z",
+      "last_open_at": "2026-11-21T14:45:26.355Z",
       "consecutive_failures": 0,
       "country": null
     },
@@ -83331,7 +83259,7 @@
       "id": "translate-tedomum-fr",
       "name": "translate.tedomum.fr",
       "url": "https://translate.tedomum.fr",
-      "checked_at": "2026-11-20T15:35:01.717Z",
+      "checked_at": "2026-11-21T14:45:28.036Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -86163,7 +86091,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "163.172.185.142",
-        "latency_ms": 1983,
+        "latency_ms": 1512,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -86171,8 +86099,8 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "51.159.189.74",
-          "latency_ms": 1300,
+          "resolved_ip": "163.172.185.142",
+          "latency_ms": 629,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -86180,15 +86108,15 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "51.159.189.74",
-          "latency_ms": 868,
+          "latency_ms": 607,
           "error": null,
           "error_code": null,
           "error_stage": null
         },
         "settings": {
           "http_status": 200,
-          "resolved_ip": "51.159.189.74",
-          "latency_ms": 637,
+          "resolved_ip": "163.172.185.142",
+          "latency_ms": 451,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -86196,7 +86124,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "51.159.189.74",
-          "latency_ms": 815,
+          "latency_ms": 588,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -86204,13 +86132,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "163.172.185.142",
-          "latency_ms": 1983,
+          "latency_ms": 1512,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:35:01.717Z",
+      "last_open_at": "2026-11-21T14:45:28.036Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -86224,7 +86152,7 @@
       "id": "translate-tedomum-net",
       "name": "translate.tedomum.net",
       "url": "https://translate.tedomum.net",
-      "checked_at": "2026-11-20T15:35:01.768Z",
+      "checked_at": "2026-11-21T14:45:28.278Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -89056,7 +88984,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "51.159.189.74",
-        "latency_ms": 1795,
+        "latency_ms": 1259,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -89064,8 +88992,8 @@
       "endpoints": {
         "health": {
           "http_status": 200,
-          "resolved_ip": "51.159.189.74",
-          "latency_ms": 1250,
+          "resolved_ip": "163.172.185.142",
+          "latency_ms": 653,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -89073,7 +89001,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "163.172.185.142",
-          "latency_ms": 793,
+          "latency_ms": 603,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -89081,7 +89009,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "51.159.189.74",
-          "latency_ms": 655,
+          "latency_ms": 446,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -89089,7 +89017,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "51.159.189.74",
-          "latency_ms": 842,
+          "latency_ms": 566,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -89097,13 +89025,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "51.159.189.74",
-          "latency_ms": 1795,
+          "latency_ms": 1259,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:35:01.768Z",
+      "last_open_at": "2026-11-21T14:45:28.278Z",
       "consecutive_failures": 0,
       "country": {
         "code": "FR",
@@ -89117,7 +89045,7 @@
       "id": "translate-vnuchkov-su",
       "name": "translate.vnuchkov.su",
       "url": "https://translate.vnuchkov.su",
-      "checked_at": "2026-11-20T15:35:01.861Z",
+      "checked_at": "2026-11-21T14:45:30.763Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -91949,7 +91877,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "91.219.58.154",
-        "latency_ms": 924,
+        "latency_ms": 884,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -91958,7 +91886,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "91.219.58.154",
-          "latency_ms": 1211,
+          "latency_ms": 895,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -91966,7 +91894,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "91.219.58.154",
-          "latency_ms": 806,
+          "latency_ms": 831,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -91974,7 +91902,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "91.219.58.154",
-          "latency_ms": 603,
+          "latency_ms": 476,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -91982,7 +91910,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "91.219.58.154",
-          "latency_ms": 790,
+          "latency_ms": 616,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -91990,13 +91918,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "91.219.58.154",
-          "latency_ms": 924,
+          "latency_ms": 884,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:35:01.861Z",
+      "last_open_at": "2026-11-21T14:45:30.763Z",
       "consecutive_failures": 0,
       "country": {
         "code": "RU",
@@ -92010,7 +91938,7 @@
       "id": "translate-wasyaco-com",
       "name": "translate.wasyaco.com",
       "url": "https://translate.wasyaco.com",
-      "checked_at": "2026-11-20T15:35:06.197Z",
+      "checked_at": "2026-11-21T14:45:31.806Z",
       "availability": "online",
       "availability_reason": null,
       "down_check": null,
@@ -92082,7 +92010,7 @@
         "skipped": null,
         "http_status": 200,
         "resolved_ip": "143.110.128.222",
-        "latency_ms": 655,
+        "latency_ms": 1137,
         "error": null,
         "error_code": null,
         "error_stage": null
@@ -92091,7 +92019,7 @@
         "health": {
           "http_status": 200,
           "resolved_ip": "143.110.128.222",
-          "latency_ms": 120,
+          "latency_ms": 150,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -92099,7 +92027,7 @@
         "languages": {
           "http_status": 200,
           "resolved_ip": "143.110.128.222",
-          "latency_ms": 87,
+          "latency_ms": 148,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -92107,7 +92035,7 @@
         "settings": {
           "http_status": 200,
           "resolved_ip": "143.110.128.222",
-          "latency_ms": 70,
+          "latency_ms": 156,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -92115,7 +92043,7 @@
         "homepage": {
           "http_status": 200,
           "resolved_ip": "143.110.128.222",
-          "latency_ms": 138,
+          "latency_ms": 220,
           "error": null,
           "error_code": null,
           "error_stage": null
@@ -92123,13 +92051,13 @@
         "translate": {
           "http_status": 200,
           "resolved_ip": "143.110.128.222",
-          "latency_ms": 655,
+          "latency_ms": 1137,
           "error": null,
           "error_code": null,
           "error_stage": null
         }
       },
-      "last_open_at": "2026-11-20T15:35:06.197Z",
+      "last_open_at": "2026-11-21T14:45:31.806Z",
       "consecutive_failures": 0,
       "country": {
         "code": "US",
