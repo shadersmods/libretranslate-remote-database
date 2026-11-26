@@ -1,6 +1,6 @@
 # Instance status
 
-Last check: **2026-11-25T17:21:53.055Z** (UTC).
+Last check: **2026-11-26T17:01:16.255Z** (UTC).
 
 “Open” means a small anonymous API translation succeeded at that time. Reachability is not permission for unlimited use.
 
