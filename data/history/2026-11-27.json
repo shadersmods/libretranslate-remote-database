@@ -1,0 +1,864 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-27T16:48:01.714Z",
+  "instances": [
+    {
+      "id": "127903-xyz",
+      "url": "https://127903.xyz",
+      "checked_at": "2026-11-27T16:46:27.789Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 10,
+      "translation_http_status": 200
+    },
+    {
+      "id": "157-230-255-151-8085",
+      "url": "http://157.230.255.151:8085",
+      "checked_at": "2026-11-27T16:46:27.790Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "165-22-210-69-5111",
+      "url": "http://165.22.210.69:5111",
+      "checked_at": "2026-11-27T16:46:27.790Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "186-248-219-194-5001",
+      "url": "http://186.248.219.194:5001",
+      "checked_at": "2026-11-27T16:46:30.276Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "adminforge",
+      "url": "https://translate.adminforge.de",
+      "checked_at": "2026-11-27T16:46:30.459Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "api-ml-translate-cider-sh",
+      "url": "https://api-ml-translate.cider.sh",
+      "checked_at": "2026-11-27T16:46:30.898Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "cryptimg-directappli-com",
+      "url": "https://cryptimg.directappli.com",
+      "checked_at": "2026-11-27T16:46:31.742Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "cutie-dating",
+      "url": "https://translate.cutie.dating",
+      "checked_at": "2026-11-27T16:46:31.896Z",
+      "offline_since": null,
+      "down_check": {
+        "policy": "connection-refused-v1",
+        "primary": {
+          "health": {
+            "http_status": null,
+            "resolved_ip": "109.230.238.120",
+            "latency_ms": 10002,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "languages": {
+            "http_status": null,
+            "resolved_ip": "109.230.238.120",
+            "latency_ms": 10001,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "settings": {
+            "http_status": null,
+            "resolved_ip": "109.230.238.120",
+            "latency_ms": 10001,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "homepage": {
+            "http_status": null,
+            "resolved_ip": "109.230.238.120",
+            "latency_ms": 10001,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          }
+        },
+        "confirmation": {
+          "http_status": null,
+          "resolved_ip": "109.230.238.120",
+          "latency_ms": 15000,
+          "error": "timeout",
+          "error_code": "ETIMEDOUT",
+          "error_stage": "request"
+        }
+      },
+      "availability_reason": "No HTTP response before the request deadline",
+      "availability": "unreachable",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "demo1-libretranslate-lntechnology-co-th",
+      "url": "https://demo1-libretranslate.lntechnology.co.th",
+      "checked_at": "2026-11-27T16:46:32.665Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "dialect",
+      "url": "https://lt.dialectapp.org",
+      "checked_at": "2026-11-27T16:46:34.042Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "displ",
+      "url": "https://libretranslate.dev.displ.eu",
+      "checked_at": "2026-11-27T16:46:36.722Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": "HTTP 503; API check incomplete",
+      "availability": "degraded",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "fedilab",
+      "url": "https://translate.fedilab.app",
+      "checked_at": "2026-11-27T16:46:38.456Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": "HTTP 403; API check incomplete",
+      "availability": "degraded",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "fluffynet",
+      "url": "https://translate.fluffynet.dev",
+      "checked_at": "2026-11-27T16:46:38.962Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "funnel4-ghost-tint-ts-net-8443",
+      "url": "https://funnel4.ghost-tint.ts.net:8443",
+      "checked_at": "2026-11-27T16:46:39.913Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 6,
+      "translation_http_status": 200
+    },
+    {
+      "id": "lecturescribes-net",
+      "url": "https://lecturescribes.net",
+      "checked_at": "2026-11-27T16:46:41.411Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "libretranslate-bolha-tools",
+      "url": "https://libretranslate.bolha.tools",
+      "checked_at": "2026-11-27T16:46:42.481Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "libretranslate-com",
+      "url": "https://libretranslate.com",
+      "checked_at": "2026-11-27T16:46:43.282Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 51,
+      "translation_http_status": 400
+    },
+    {
+      "id": "libretranslate-ideedusiecle-com",
+      "url": "https://libretranslate.ideedusiecle.com",
+      "checked_at": "2026-11-27T16:46:44.004Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "mrwe-de",
+      "url": "https://mrwe.de",
+      "checked_at": "2026-11-27T16:46:45.481Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "opentranslate-devol-it",
+      "url": "https://opentranslate.devol.it",
+      "checked_at": "2026-11-27T16:46:46.409Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 13,
+      "translation_http_status": 200
+    },
+    {
+      "id": "osnabrueck",
+      "url": "https://translate.virtuos.uni-osnabrueck.de",
+      "checked_at": "2026-11-27T16:46:47.631Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "sans-nuage",
+      "url": "https://traduire.sans-nuage.fr",
+      "checked_at": "2026-11-27T16:46:48.723Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 10,
+      "translation_http_status": 200
+    },
+    {
+      "id": "taketh-is",
+      "url": "https://taketh.is",
+      "checked_at": "2026-11-27T16:46:50.053Z",
+      "offline_since": null,
+      "down_check": {
+        "policy": "connection-refused-v1",
+        "primary": {
+          "health": {
+            "http_status": null,
+            "resolved_ip": "95.216.221.17",
+            "latency_ms": 470,
+            "error": "tls_error",
+            "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
+            "error_stage": "request"
+          },
+          "languages": {
+            "http_status": null,
+            "resolved_ip": "95.216.221.17",
+            "latency_ms": 238,
+            "error": "tls_error",
+            "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
+            "error_stage": "request"
+          },
+          "settings": {
+            "http_status": null,
+            "resolved_ip": "95.216.221.17",
+            "latency_ms": 231,
+            "error": "tls_error",
+            "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
+            "error_stage": "request"
+          },
+          "homepage": {
+            "http_status": null,
+            "resolved_ip": "95.216.221.17",
+            "latency_ms": 231,
+            "error": "tls_error",
+            "error_code": "ERR_TLS_CERT_ALTNAME_INVALID",
+            "error_stage": "request"
+          }
+        },
+        "confirmation": null
+      },
+      "availability_reason": "TLS certificate or handshake failure (ERR_TLS_CERT_ALTNAME_INVALID)",
+      "availability": "unreachable",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "tr-asturias-red",
+      "url": "https://tr.asturias.red",
+      "checked_at": "2026-11-27T16:46:51.225Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "tr-doufei-eu-org",
+      "url": "https://tr.doufei.eu.org",
+      "checked_at": "2026-11-27T16:46:51.275Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "tr-uomainfra-fi",
+      "url": "https://tr.uomainfra.fi",
+      "checked_at": "2026-11-27T16:46:53.496Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "rate_limited",
+      "language_count": 19,
+      "translation_http_status": 429
+    },
+    {
+      "id": "traduzioni-serviziliberi-it",
+      "url": "https://traduzioni.serviziliberi.it",
+      "checked_at": "2026-11-27T16:46:53.670Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 43,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-3speak-tv",
+      "url": "https://translate.3speak.tv",
+      "checked_at": "2026-11-27T16:46:55.939Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 20,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-blackwallgate-ipv64-net",
+      "url": "https://translate.blackwallgate.ipv64.net",
+      "checked_at": "2026-11-27T16:46:56.346Z",
+      "offline_since": null,
+      "down_check": {
+        "policy": "connection-refused-v1",
+        "primary": {
+          "health": {
+            "http_status": null,
+            "resolved_ip": "2a03:b580:ab6e:b100:ab6:57ff:feb7:4b02",
+            "latency_ms": 140,
+            "error": "connection_error",
+            "error_code": "ENETUNREACH",
+            "error_stage": "request"
+          },
+          "languages": {
+            "http_status": null,
+            "resolved_ip": "2a03:b580:ab6e:b100:ab6:57ff:feb7:4b02",
+            "latency_ms": 108,
+            "error": "connection_error",
+            "error_code": "ENETUNREACH",
+            "error_stage": "request"
+          },
+          "settings": {
+            "http_status": null,
+            "resolved_ip": "2a03:b580:ab6e:b100:ab6:57ff:feb7:4b02",
+            "latency_ms": 160,
+            "error": "connection_error",
+            "error_code": "ENETUNREACH",
+            "error_stage": "request"
+          },
+          "homepage": {
+            "http_status": null,
+            "resolved_ip": "2a03:b580:ab6e:b100:ab6:57ff:feb7:4b02",
+            "latency_ms": 192,
+            "error": "connection_error",
+            "error_code": "ENETUNREACH",
+            "error_stage": "request"
+          }
+        },
+        "confirmation": null
+      },
+      "availability_reason": "IPv6 route unavailable from this checker",
+      "availability": "unreachable",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "translate-blueva-net",
+      "url": "https://translate.blueva.net",
+      "checked_at": "2026-11-27T16:46:56.946Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-brothertec-eu",
+      "url": "https://translate.brothertec.eu",
+      "checked_at": "2026-11-27T16:46:59.158Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 50,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-cls-ru-nl",
+      "url": "https://translate.cls.ru.nl",
+      "checked_at": "2026-11-27T16:47:01.141Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 12,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-cornelcaba-com",
+      "url": "https://translate.cornelcaba.com",
+      "checked_at": "2026-11-27T16:47:01.948Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 2,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-daddelwerk-net",
+      "url": "https://translate.daddelwerk.net",
+      "checked_at": "2026-11-27T16:47:04.281Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-dinosite-net",
+      "url": "https://translate.dinosite.net",
+      "checked_at": "2026-11-27T16:47:04.557Z",
+      "offline_since": null,
+      "down_check": {
+        "policy": "connection-refused-v1",
+        "primary": {
+          "health": {
+            "http_status": null,
+            "resolved_ip": "129.213.28.98",
+            "latency_ms": 10000,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "languages": {
+            "http_status": null,
+            "resolved_ip": "129.146.24.47",
+            "latency_ms": 9999,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "settings": {
+            "http_status": null,
+            "resolved_ip": "129.146.24.47",
+            "latency_ms": 10001,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          },
+          "homepage": {
+            "http_status": null,
+            "resolved_ip": "129.146.24.47",
+            "latency_ms": 10000,
+            "error": "timeout",
+            "error_code": "ETIMEDOUT",
+            "error_stage": "request"
+          }
+        },
+        "confirmation": {
+          "http_status": null,
+          "resolved_ip": "129.213.28.98",
+          "latency_ms": 15005,
+          "error": "timeout",
+          "error_code": "ETIMEDOUT",
+          "error_stage": "request"
+        }
+      },
+      "availability_reason": "No HTTP response before the request deadline",
+      "availability": "unreachable",
+      "api_access": "unverified",
+      "language_count": 0,
+      "translation_http_status": null
+    },
+    {
+      "id": "translate-direitosdigitais-pt",
+      "url": "https://translate.direitosdigitais.pt",
+      "checked_at": "2026-11-27T16:47:06.508Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ecotec-gp",
+      "url": "https://translate.ecotec.gp",
+      "checked_at": "2026-11-27T16:47:10.004Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-envs-net",
+      "url": "https://translate.envs.net",
+      "checked_at": "2026-11-27T16:47:12.008Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-filewave-com",
+      "url": "https://translate.filewave.com",
+      "checked_at": "2026-11-27T16:47:14.413Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-geobon-org",
+      "url": "https://translate.geobon.org",
+      "checked_at": "2026-11-27T16:47:14.732Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 50,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-hagocloud-com",
+      "url": "https://translate.hagocloud.com",
+      "checked_at": "2026-11-27T16:47:15.725Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ignifi-eu",
+      "url": "https://translate.ignifi.eu",
+      "checked_at": "2026-11-27T16:47:18.059Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "key_required",
+      "language_count": 6,
+      "translation_http_status": 400
+    },
+    {
+      "id": "translate-ilabhub-atc-gr",
+      "url": "https://translate.ilabhub.atc.gr",
+      "checked_at": "2026-11-27T16:47:21.155Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 48,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-libregalaxy-org",
+      "url": "https://translate.libregalaxy.org",
+      "checked_at": "2026-11-27T16:47:24.008Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-libresoftware-cloud",
+      "url": "https://translate.libresoftware.cloud",
+      "checked_at": "2026-11-27T16:47:25.660Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-mandello-com-br",
+      "url": "https://translate.mandello.com.br",
+      "checked_at": "2026-11-27T16:47:27.832Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 49,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-multed-com",
+      "url": "https://translate.multed.com",
+      "checked_at": "2026-11-27T16:47:28.902Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 5,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-myvoicecountscharitiesfoundation-org",
+      "url": "https://translate.myvoicecountscharitiesfoundation.org",
+      "checked_at": "2026-11-27T16:47:29.378Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-ondocker-cynapsis-de",
+      "url": "https://translate.ondocker.cynapsis.de",
+      "checked_at": "2026-11-27T16:47:30.606Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-orangc-net",
+      "url": "https://translate.orangc.net",
+      "checked_at": "2026-11-27T16:47:32.027Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-peculiar-florist",
+      "url": "https://translate.peculiar.florist",
+      "checked_at": "2026-11-27T16:47:33.172Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-retzo-net",
+      "url": "https://translate.retzo.net",
+      "checked_at": "2026-11-27T16:47:34.034Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 2,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-sendbazar-net",
+      "url": "https://translate.sendbazar.net",
+      "checked_at": "2026-11-27T16:47:35.530Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-splidex-com",
+      "url": "https://translate.splidex.com",
+      "checked_at": "2026-11-27T16:47:36.381Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-tedomum-fr",
+      "url": "https://translate.tedomum.fr",
+      "checked_at": "2026-11-27T16:47:37.297Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-tedomum-net",
+      "url": "https://translate.tedomum.net",
+      "checked_at": "2026-11-27T16:47:39.007Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-vnuchkov-su",
+      "url": "https://translate.vnuchkov.su",
+      "checked_at": "2026-11-27T16:47:40.188Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 50,
+      "translation_http_status": 200
+    },
+    {
+      "id": "translate-wasyaco-com",
+      "url": "https://translate.wasyaco.com",
+      "checked_at": "2026-11-27T16:47:41.716Z",
+      "offline_since": null,
+      "down_check": null,
+      "availability_reason": null,
+      "availability": "online",
+      "api_access": "open",
+      "language_count": 4,
+      "translation_http_status": 200
+    }
+  ]
+}
